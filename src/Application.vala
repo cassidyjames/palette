@@ -27,6 +27,10 @@ public class Palette : Gtk.Application {
 
 
     protected override void activate () {
+        var provider = new Gtk.CssProvider ();
+        provider.load_from_resource ("/com/github/cassidyjames/palette/Application.css");
+        Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+
         var app_window = new MainWindow (this);
         app_window.show_all ();
 
@@ -34,10 +38,6 @@ public class Palette : Gtk.Application {
 
         add_action (quit_action);
         set_accels_for_action ("app.quit", {"Escape"});
-
-        var provider = new Gtk.CssProvider ();
-        provider.load_from_resource ("/com/github/cassidyjames/palette/Application.css");
-        Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         quit_action.activate.connect (() => {
             if (app_window != null) {

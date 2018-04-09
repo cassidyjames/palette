@@ -19,6 +19,8 @@
 * Authored by: Cassidy James Blaede <c@ssidyjam.es>
 */
 
+const string levels[] = {"100", "300", "500", "700", "900"};
+
 public class ColorButton : Gtk.Button {
     public string class_name { get; construct; }
     public string human { get; construct; }
@@ -38,38 +40,34 @@ public class ColorButton : Gtk.Button {
         color_context.add_class (class_name);
         color_context.add_class ("circular");
 
-        var color_100 = new Gtk.Label ("%s 100".printf (human));
-        color_100.hexpand = true;
-        color_100.height_request = 48;
-        color_100.get_style_context ().add_class ("%s-100".printf (class_name));
-
-        var color_300 = new Gtk.Label ("%s 300".printf (human));
-        color_300.hexpand = true;
-        color_300.height_request = 48;
-        color_300.get_style_context ().add_class ("%s-300".printf (class_name));
-
-        var color_500 = new Gtk.Label ("%s 500".printf (human));
-        color_500.hexpand = true;
-        color_500.height_request = 48;
-        color_500.get_style_context ().add_class ("%s-500".printf (class_name));
-
-        var color_700 = new Gtk.Label ("%s 700".printf (human));
-        color_700.hexpand = true;
-        color_700.height_request = 48;
-        color_700.get_style_context ().add_class ("%s-700".printf (class_name));
-
-        var color_900 = new Gtk.Label ("%s 900".printf (human));
-        color_900.hexpand = true;
-        color_900.height_request = 48;
-        color_900.get_style_context ().add_class ("%s-900".printf (class_name));
-
         var color_grid = new Gtk.Grid ();
         color_grid.width_request = 200;
-        color_grid.attach (color_100, 0, 0, 1, 1);
-        color_grid.attach (color_300, 0, 1, 1, 1);
-        color_grid.attach (color_500, 0, 2, 1, 1);
-        color_grid.attach (color_700, 0, 3, 1, 1);
-        color_grid.attach (color_900, 0, 4, 1, 1);
+
+        int i = 0;
+        foreach (unowned string level in levels) {
+            Gdk.RGBA rgba;
+            string hex = "";
+
+            bool found = color_context.lookup_color ("%s_%s".printf (class_name.up (), level), out rgba);
+            if (found) {
+                hex = "#%02x%02x%02x".printf ((int) (rgba.red * 255), (int) (rgba.green * 255), (int) (rgba.blue * 255));
+            }
+
+            var color = new Gtk.Label ("%s %s".printf (human, level));
+            color.hexpand = true;
+            color.height_request = 48;
+            color.get_style_context ().add_class ("%s-%s".printf (class_name, level));
+
+            var color_hex = new Gtk.Label (hex);
+            color_hex.hexpand = true;
+            color_hex.height_request = 48;
+            color_hex.get_style_context ().add_class ("%s-%s".printf (class_name, level));
+
+            color_grid.attach (color, 0, i, 1, 1);
+            color_grid.attach (color_hex, 1, i, 1, 1);
+
+            i++;
+        }
 
         var color_menu = new Gtk.Popover (this);
         color_menu.add (color_grid);

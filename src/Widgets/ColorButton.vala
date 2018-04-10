@@ -121,11 +121,10 @@ public class ColorButton : Gtk.MenuButton {
 
     private double sanitize_color (double color) {
         if (color <= 0.03928) {
-            color = color / 12.92;
-        } else {
-            color = Math.pow ((color + 0.055) / 1.055, 2.4);
+            return color / 12.92;
         }
-        return color;
+
+        return Math.pow ((color + 0.055) / 1.055, 2.4);
     }
 }
 

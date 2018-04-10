@@ -27,6 +27,8 @@ public class ColorButton : Gtk.MenuButton {
         }
     """;
     private const int VARIANTS[] = {100, 300, 500, 700, 900};
+    private const string BLACK = "#000";
+    private const string WHITE = "#fff";
 
     public Color color { get; construct; }
     
@@ -54,7 +56,7 @@ public class ColorButton : Gtk.MenuButton {
         foreach (unowned int variant in VARIANTS) {
             var color_variant = new ColorVariant (color, variant, color_menu);
             color_grid.attach (color_variant, 0, i, 1, 1);
-            add_styles (color.style_class (), variant, color.hex ()[variant], "#fff");
+            add_styles (color.style_class (), variant, color.hex ()[variant]);
             i++;
         }
 
@@ -63,7 +65,30 @@ public class ColorButton : Gtk.MenuButton {
         popover = color_menu;
     }
     
-    private void add_styles (string class_name, int variant, string bg_color, string fg_color) {
+    private void add_styles (string class_name, int variant, string bg_color) {
+        var gdk_white = Gdk.RGBA ();
+        gdk_white.parse (WHITE);
+
+        var gdk_black = Gdk.RGBA ();
+        gdk_black.parse (BLACK);
+
+        var gdk_bg = Gdk.RGBA ();
+        gdk_bg.parse (bg_color);
+
+        var contrast_white = contrast_ratio (
+            gdk_bg,
+            gdk_white
+        );
+        var contrast_black = contrast_ratio (
+            gdk_bg,
+            gdk_black
+        );
+
+        var fg_color = BLACK;
+        if ( contrast_white > contrast_black ) {
+            fg_color = WHITE;
+        }
+
         var provider = new Gtk.CssProvider ();
         try {
             var colored_css = BUTTON_CSS.printf (class_name, variant, bg_color, fg_color);
@@ -73,6 +98,34 @@ public class ColorButton : Gtk.MenuButton {
         } catch (GLib.Error e) {
             return;
         }
+    }
+
+    private double contrast_ratio (Gdk.RGBA bg_color, Gdk.RGBA fg_color) {
+        var bg_luminance = get_luminance (bg_color);
+        var fg_luminance = get_luminance (fg_color);
+
+        if (bg_luminance > fg_luminance) {
+            return (bg_luminance + 0.05) / (fg_luminance + 0.05);
+        }
+
+        return (fg_luminance + 0.05) / (bg_luminance + 0.05);
+    }
+
+    private double get_luminance (Gdk.RGBA color) {
+        var red = sanitize_color (color.red) * 0.2126;
+        var green = sanitize_color (color.green) * 0.7152;
+        var blue = sanitize_color (color.blue) * 0.0722;
+
+        return (red + green + blue);
+    }
+
+    private double sanitize_color (double color) {
+        if (color <= 0.03928) {
+            color = color / 12.92;
+        } else {
+            color = Math.pow ((color + 0.055) / 1.055, 2.4);
+        }
+        return color;
     }
 }
 

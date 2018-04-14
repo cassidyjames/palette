@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: com.github.cassidyjames.palette\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-09 23:39-0600\n"
-"PO-Revision-Date: 2018-04-09 19:57-0600\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2018-04-14 17:40-0300\n"
+"Last-Translator: Tudor Plugaru <plugaru.tudor@gmail.com>\n"
+"Language-Team: Romanian\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ASCII\n"
@@ -21,12 +21,12 @@ msgstr ""
 #: data/com.github.cassidyjames.palette.appdata.xml.in:7
 #: data/com.github.cassidyjames.palette.desktop.in:3 src/MainWindow.vala:28
 msgid "Palette"
-msgstr ""
+msgstr "Palette"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:8
 #: data/com.github.cassidyjames.palette.desktop.in:5
 msgid "View and copy colors from the elementary brand palette"
-msgstr ""
+msgstr "Vizualizează și copie culorile din paleta de culori elementary"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:10
 msgid ""
@@ -34,64 +34,67 @@ msgid ""
 "entire palette on your local device, plus copy any variation of each color "
 "to paste into your own projects."
 msgstr ""
+"elementary folosește un set de culori luminoase și prietenoase. Accesați cu ușurință "
+"întreaga paletă de pe dispozitivul dvs. local, plus copiați orice variație a fiecărei culori "
+"pentru a lipi în proiectele proprii."
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:69
 msgid "Cassidy James Blaede"
-msgstr ""
+msgstr "Cassidy James Blaede"
 
 #: data/com.github.cassidyjames.palette.desktop.in:4
 msgid "Color palette viewer"
-msgstr ""
+msgstr "Vizualizatorul paletei de culori"
 
 #: data/com.github.cassidyjames.palette.desktop.in:8
 msgid "com.github.cassidyjames.palette"
-msgstr ""
+msgstr "com.github.cassidyjames.palette"
 
 #: data/com.github.cassidyjames.palette.desktop.in:12
 msgid "color;palette;scheme;copy;paste;swatch;contrast;"
-msgstr ""
+msgstr "color;palette;scheme;copy;paste;swatch;contrast;"
 
 #: src/Colors.vala:37
 msgid "Strawberry"
-msgstr ""
+msgstr "Căpșună"
 
 #: src/Colors.vala:39
 msgid "Orange"
-msgstr ""
+msgstr "Portocală"
 
 #: src/Colors.vala:41
 msgid "Banana"
-msgstr ""
+msgstr "Banana"
 
 #: src/Colors.vala:43
 msgid "Lime"
-msgstr ""
+msgstr "Lămâie"
 
 #: src/Colors.vala:45
 msgid "Blueberry"
-msgstr ""
+msgstr "Coacăză"
 
 #: src/Colors.vala:47
 msgid "Grape"
-msgstr ""
+msgstr "Strugure"
 
 #: src/Colors.vala:49
 msgid "Cocoa"
-msgstr ""
+msgstr "Cacao"
 
 #: src/Colors.vala:51
 msgid "Silver"
-msgstr ""
+msgstr "Argint"
 
 #: src/Colors.vala:53
 msgid "Slate"
-msgstr ""
+msgstr "Ardezie"
 
 #: src/Colors.vala:55
 msgid "Black"
-msgstr ""
+msgstr "Negru"
 
 #: src/Widgets/ColorVariant.vala:33
 #, c-format
 msgid "Copy %s to clipboard"
-msgstr ""
+msgstr "Copie %s în clipboard"

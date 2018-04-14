@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: com.github.cassidyjames.palette\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-09 23:39-0600\n"
-"PO-Revision-Date: 2018-04-09 19:57-0600\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2018-04-11 15:37-0200\n"
+"Last-Translator: Arthur Soulie <arthur.soulie@tuta.io>\n"
+"Language-Team: French\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ASCII\n"
@@ -20,12 +20,12 @@ msgstr ""
 #: data/com.github.cassidyjames.palette.appdata.xml.in:7
 #: data/com.github.cassidyjames.palette.desktop.in:3 src/MainWindow.vala:28
 msgid "Palette"
-msgstr ""
+msgstr "Palette"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:8
 #: data/com.github.cassidyjames.palette.desktop.in:5
 msgid "View and copy colors from the elementary brand palette"
-msgstr ""
+msgstr "Visualisez et copiez la palette de couleurs d'elementary"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:10
 msgid ""
@@ -33,64 +33,67 @@ msgid ""
 "entire palette on your local device, plus copy any variation of each color "
 "to paste into your own projects."
 msgstr ""
+"elementary utilise des couleurs vives et conviviales. Accedez facilement a "
+"la palette de couleur entiere sur votre appareil, vous pourrez alors copier "
+"une couleur ou une de ses variations pour les coller dans vos projets."
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:69
 msgid "Cassidy James Blaede"
-msgstr ""
+msgstr "Cassidy James Blaede"
 
 #: data/com.github.cassidyjames.palette.desktop.in:4
 msgid "Color palette viewer"
-msgstr ""
+msgstr "Cassidy James Blaede"
 
 #: data/com.github.cassidyjames.palette.desktop.in:8
 msgid "com.github.cassidyjames.palette"
-msgstr ""
+msgstr "com.github.cassidyjames.palette"
 
 #: data/com.github.cassidyjames.palette.desktop.in:12
 msgid "color;palette;scheme;copy;paste;swatch;contrast;"
-msgstr ""
+msgstr "color;palette;scheme;copy;paste;swatch;contrast;"
 
 #: src/Colors.vala:37
 msgid "Strawberry"
-msgstr ""
+msgstr "Fraise"
 
 #: src/Colors.vala:39
 msgid "Orange"
-msgstr ""
+msgstr "Orange"
 
 #: src/Colors.vala:41
 msgid "Banana"
-msgstr ""
+msgstr "Banane"
 
 #: src/Colors.vala:43
 msgid "Lime"
-msgstr ""
+msgstr "Citron"
 
 #: src/Colors.vala:45
 msgid "Blueberry"
-msgstr ""
+msgstr "Myrtille"
 
 #: src/Colors.vala:47
 msgid "Grape"
-msgstr ""
+msgstr "Raisin"
 
 #: src/Colors.vala:49
 msgid "Cocoa"
-msgstr ""
+msgstr "Cacao"
 
 #: src/Colors.vala:51
 msgid "Silver"
-msgstr ""
+msgstr "Argent"
 
 #: src/Colors.vala:53
 msgid "Slate"
-msgstr ""
+msgstr "Ardoise"
 
 #: src/Colors.vala:55
 msgid "Black"
-msgstr ""
+msgstr "Noir"
 
 #: src/Widgets/ColorVariant.vala:33
 #, c-format
 msgid "Copy %s to clipboard"
-msgstr ""
+msgstr "Copiez %s sur le presse papier"

@@ -13,6 +13,11 @@
     <binary>com.github.cassidyjames.palette</binary>
   </provides>
   ​<releases>
+    <release version="2.0.3" date="2018-04-14">
+      <description>
+        <p>Bună ziua! Added Romanian translations thanks to Plugaru Tudor.</p>
+      </description>
+    </release>
     <release version="2.0.2" date="2018-04-13">
       <description>
         <p>Bonjour! Added French translations thanks to ArthurS1.</p>

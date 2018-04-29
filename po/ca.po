@@ -47,7 +47,7 @@ msgstr "com.github.cassidyjames.palette"
 
 #: data/com.github.cassidyjames.palette.desktop.in:12
 msgid "color;palette;scheme;copy;paste;swatch;contrast;"
-msgstr "color;paleta;esquema;copia;enganxa;mostra;contrast"
+msgstr "color;paleta;esquema;copia;enganxa;mostra;contrast;"
 
 #: src/Colors.vala:37
 msgid "Strawberry"

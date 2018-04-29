@@ -19,12 +19,12 @@ msgstr ""
 #: data/com.github.cassidyjames.palette.appdata.xml.in:7
 #: data/com.github.cassidyjames.palette.desktop.in:3 src/MainWindow.vala:28
 msgid "Palette"
-msgstr ""
+msgstr "Paleta"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:8
 #: data/com.github.cassidyjames.palette.desktop.in:5
 msgid "View and copy colors from the elementary brand palette"
-msgstr ""
+msgstr "Vegi i copiï els colors de la marca elementary des de la paleta"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:10
 msgid ""
@@ -32,64 +32,67 @@ msgid ""
 "entire palette on your local device, plus copy any variation of each color "
 "to paste into your own projects."
 msgstr ""
+"elementary usa un conjunt de colors brillants i amistós. Accedeixi fàcilment a la "
+"totalitat de la paleta des del seu dispositiu en local, a més pot copiar qualsevol variació de cada color "
+"per a enganxar-lo al seu propi projecte."
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:69
 msgid "Cassidy James Blaede"
-msgstr ""
+msgstr "Cassidy James Blaede"
 
 #: data/com.github.cassidyjames.palette.desktop.in:4
 msgid "Color palette viewer"
-msgstr ""
+msgstr "Visor de paleta de colors"
 
 #: data/com.github.cassidyjames.palette.desktop.in:8
 msgid "com.github.cassidyjames.palette"
-msgstr ""
+msgstr "com.github.cassidyjames.palette"
 
 #: data/com.github.cassidyjames.palette.desktop.in:12
 msgid "color;palette;scheme;copy;paste;swatch;contrast;"
-msgstr ""
+msgstr "color;paleta;esquema;copia;enganxa;mostra;contrast"
 
 #: src/Colors.vala:37
 msgid "Strawberry"
-msgstr ""
+msgstr "Maduixa"
 
 #: src/Colors.vala:39
 msgid "Orange"
-msgstr ""
+msgstr "Taronja"
 
 #: src/Colors.vala:41
 msgid "Banana"
-msgstr ""
+msgstr "Plàtan"
 
 #: src/Colors.vala:43
 msgid "Lime"
-msgstr ""
+msgstr "Llima"
 
 #: src/Colors.vala:45
 msgid "Blueberry"
-msgstr ""
+msgstr "Nabiu"
 
 #: src/Colors.vala:47
 msgid "Grape"
-msgstr ""
+msgstr "Raïm"
 
 #: src/Colors.vala:49
 msgid "Cocoa"
-msgstr ""
+msgstr "Cacau"
 
 #: src/Colors.vala:51
 msgid "Silver"
-msgstr ""
+msgstr "Plata"
 
 #: src/Colors.vala:53
 msgid "Slate"
-msgstr ""
+msgstr "Pissarra"
 
 #: src/Colors.vala:55
 msgid "Black"
-msgstr ""
+msgstr "Negre"
 
 #: src/Widgets/ColorVariant.vala:33
 #, c-format
 msgid "Copy %s to clipboard"
-msgstr ""
+msgstr "Copiar %s al portapapers"

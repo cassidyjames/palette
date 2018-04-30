@@ -13,6 +13,11 @@
     <binary>com.github.cassidyjames.palette</binary>
   </provides>
   ​<releases>
+    <release version="2.0.5" date="2018-04-30">
+      <description>
+        <p>Hola! Added Catalan translations thanks to eudaldgr.</p>
+      </description>
+    </release>
     <release version="2.0.4" date="2018-04-16">
       <description>
         <p>¡Hola! Added Spanish translations thanks to Alain (alainm23).</p>

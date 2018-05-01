@@ -13,6 +13,11 @@
     <binary>com.github.cassidyjames.palette</binary>
   </provides>
   ​<releases>
+    <release version="2.0.6" date="2018-05-01">
+      <description>
+        <p>Add translation instructions and update translation link in app data</p>
+      </description>
+    </release>
     <release version="2.0.5" date="2018-04-30">
       <description>
         <p>Hola! Added Catalan translations thanks to eudaldgr.</p>

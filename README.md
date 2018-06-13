@@ -8,7 +8,9 @@
   <a href="https://appcenter.elementary.io/com.github.cassidyjames.palette"><img src="https://appcenter.elementary.io/badge.svg" alt="Get it on AppCenter" /></a>
 </p>
 
+
 ![Screenshot](data/screenshot-2.png)
+
 
 ## View and copy colors from the elementary brand palette
 
@@ -45,6 +47,13 @@ To install, use `ninja install`, then execute with `com.github.cassidyjames.pale
 ## Other Platforms
 
 Palette is made for elementary OS, but may have been built and made available elsewhere by community members. These builds may have modifications or changes and **are not provided or supported by me**.
+
+
+## Special Thanks
+
+- [Micah Ilbery](https://github.com/micahilbery) for the shiny icons
+- [Daniel Foré](https://github.com/danrabbit) for his apps to use as code examples
+
 
 -----
 

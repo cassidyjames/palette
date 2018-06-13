@@ -125,11 +125,11 @@ public enum Color {
                 hex.set (900, "#002e99");
                 break;
             case GRAPE:
-                hex.set (100, "#e29ffc");
-                hex.set (300, "#ad65d6");
-                hex.set (500, "#7a36b1");
-                hex.set (700, "#4c158a");
-                hex.set (900, "#260063");
+                hex.set (100, "#e4c6fa");
+                hex.set (300, "#cd9ef7");
+                hex.set (500, "#a56de2");
+                hex.set (700, "#7239b3");
+                hex.set (900, "#452981");
                 break;
             case COCOA:
                 hex.set (100, "#a3907c");

@@ -13,9 +13,15 @@
     <binary>com.github.cassidyjames.palette</binary>
   </provides>
   ​<releases>
-    <release version="2.0.6" date="2018-05-01">
+    <release version="2.1.0" date="2018-06-13">
       <description>
-        <p>Add translation instructions and update translation link in app data</p>
+        <p>All About That Grape</p>
+        <ul>
+          <li>Updated Grape color to match official elementary palette</li>
+          <li>Updated icons to match new Grape color</li>
+          <li>Здравствуйте! Added Russian translations thanks to Camellan</li>
+          <li>Add translation instructions and update translation link in app data</li>
+        </ul>
       </description>
     </release>
     <release version="2.0.5" date="2018-04-30">

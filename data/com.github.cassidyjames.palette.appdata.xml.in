@@ -13,6 +13,11 @@
     <binary>com.github.cassidyjames.palette</binary>
   </provides>
   ​<releases>
+    <release version="2.2.0" date="2018-06-30">
+      <description>
+        <p>Hello, Juno!</p>
+      </description>
+    </release>
     <release version="2.1.0" date="2018-06-13">
       <description>
         <p>All About That Grape</p>

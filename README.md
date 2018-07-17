@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/cassidyjames/palette.svg?branch=master)](https://travis-ci.org/cassidyjames/palette)
 
 <p align="center">
-  <img src="https://cdn.rawgit.com/cassidyjames/palette/4a9e5d46750cb1409a8d1a741028f5797cbf6c4c/data/icons/128/com.github.cassidyjames.palette.svg" alt="Icon" />
+  <img src="https://cdn.rawgit.com/cassidyjames/palette/76408ec21747b96b49cccc38249129a81d5724a2/data/icons/128.svg" alt="Icon" />
 </p>
 <h1 align="center">Palette</h1>
 <p align="center">

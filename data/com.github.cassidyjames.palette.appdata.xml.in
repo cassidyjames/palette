@@ -13,6 +13,11 @@
     <binary>com.github.cassidyjames.palette</binary>
   </provides>
   ​<releases>
+    <release version="2.2.1" date="2018-07-17">
+      <description>
+        <p>Refreshed icon designed by Sam Hewitt and Micah Ilbery</p>
+      </description>
+    </release>
     <release version="2.2.0" date="2018-06-30">
       <description>
         <p>Hello, Juno!</p>

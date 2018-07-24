@@ -9,7 +9,7 @@
 </p>
 
 
-![Screenshot](data/screenshot-2.png)
+![Screenshot](data/screenshots/screenshot-lime.png)
 
 
 ## View and copy colors from the elementary brand palette

@@ -14,7 +14,7 @@
 
 ## View and copy colors from the elementary brand palette
 
-elementary uses a set of bright and friendly colors. Easily access the entire palette on your local device, plus copy any variation of each color to paste into your own projects.
+elementary uses a set of bright and friendly colors. Easily access the entire palette on your local device, see examples of usage, and copy any variation of each color to paste into your own projects.
 
 ## Made for [elementary OS](https://elementary.io)
 

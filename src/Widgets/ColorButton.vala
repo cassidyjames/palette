@@ -25,13 +25,17 @@ public class ColorButton : Gtk.MenuButton {
             background: %s;
             color: %s;
         }
+
+        .fg-%s-%i {
+            color: %s;
+        }
     """;
     private const int VARIANTS[] = {100, 300, 500, 700, 900};
     private const string BLACK = "#000";
     private const string WHITE = "#fff";
 
     public Color color { get; construct; }
-    
+
     public ColorButton (Color color) {
         Object (
             height_request: 128,
@@ -52,19 +56,29 @@ public class ColorButton : Gtk.MenuButton {
         color_menu.add (color_grid);
         color_menu.position = Gtk.PositionType.BOTTOM;
 
+        var uses_label = new Gtk.Label (_("<b>Uses:</b> %s").printf (color.uses ()));
+        uses_label.margin = 6;
+        uses_label.max_width_chars = 30;
+        uses_label.use_markup = true;
+        uses_label.wrap = true;
+        uses_label.xalign = 0;
+        uses_label.get_style_context ().add_class ("fg-%s-%i".printf (color.style_class (), 900));
+
         int i = 0;
         foreach (unowned int variant in VARIANTS) {
             var color_variant = new ColorVariant (color, variant, color_menu);
-            color_grid.attach (color_variant, 0, i, 1, 1);
+            color_grid.attach (color_variant, 0, i);
             add_styles (color.style_class (), variant, color.hex ()[variant]);
             i++;
         }
+
+        color_grid.attach (uses_label, 0, i);
 
         color_context.add_class ("%s-%i".printf (color.style_class (), 500));
         color_grid.show_all ();
         popover = color_menu;
     }
-    
+
     private void add_styles (string class_name, int variant, string bg_color) {
         var gdk_white = Gdk.RGBA ();
         gdk_white.parse (WHITE);
@@ -85,8 +99,8 @@ public class ColorButton : Gtk.MenuButton {
         );
 
         var fg_color = WHITE;
-        
-        // NOTE: We cheat and add 3 to contrast when checking against black, 
+
+        // NOTE: We cheat and add 3 to contrast when checking against black,
         // because white generally looks better on a colored background
         if ( contrast_black > (contrast_white + 3) ) {
             fg_color = BLACK;
@@ -94,7 +108,16 @@ public class ColorButton : Gtk.MenuButton {
 
         var provider = new Gtk.CssProvider ();
         try {
-            var colored_css = BUTTON_CSS.printf (class_name, variant, bg_color, fg_color);
+            var colored_css = BUTTON_CSS.printf (
+                class_name,
+                variant,
+                bg_color,
+                fg_color,
+
+                class_name,
+                variant,
+                bg_color
+            );
             provider.load_from_data (colored_css, colored_css.length);
 
             Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);

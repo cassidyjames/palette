@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.cassidyjames.palette\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-09 23:39-0600\n"
+"POT-Creation-Date: 2018-07-24 17:30-0600\n"
 "PO-Revision-Date: 2018-04-29 16:00-0600\n"
 "Last-Translator: Eudald Gubert Roldan <eudaldgr@posteo.net>\n"
 "Language-Team: none\n"
@@ -28,12 +28,18 @@ msgid "View and copy colors from the elementary brand palette"
 msgstr "Vegi i copiï els colors de la marca elementary des de la paleta"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:10
+#, fuzzy
 msgid ""
-"elementary uses a set of bright and friendly colors. Easily access the entire palette on your local device, plus copy any variation of each color to paste into your own projects."
+"elementary uses a set of bright and friendly colors. Easily access the "
+"entire palette on your local device, see examples of usage, and copy any "
+"variation of each color to paste into your own projects."
 msgstr ""
-"elementary usa un conjunt de colors brillants i amistós. Accedeixi fàcilment a la totalitat de la paleta des del seu dispositiu en local, a més pot copiar qualsevol variació de cada color per a enganxar-lo al seu propi projecte."
+"elementary usa un conjunt de colors brillants i amistós. Accedeixi fàcilment "
+"a la totalitat de la paleta des del seu dispositiu en local, a més pot "
+"copiar qualsevol variació de cada color per a enganxar-lo al seu propi "
+"projecte."
 
-#: data/com.github.cassidyjames.palette.appdata.xml.in:69
+#: data/com.github.cassidyjames.palette.appdata.xml.in:115
 msgid "Cassidy James Blaede"
 msgstr "Cassidy James Blaede"
 
@@ -46,7 +52,8 @@ msgid "com.github.cassidyjames.palette"
 msgstr "com.github.cassidyjames.palette"
 
 #: data/com.github.cassidyjames.palette.desktop.in:12
-msgid "color;palette;scheme;copy;paste;swatch;contrast;"
+#, fuzzy
+msgid "color;palette;scheme;copy;paste;swatch;contrast;🎨;"
 msgstr "color;paleta;esquema;copia;enganxa;mostra;contrast;"
 
 #: src/Colors.vala:37
@@ -88,6 +95,51 @@ msgstr "Pissarra"
 #: src/Colors.vala:55
 msgid "Black"
 msgstr "Negre"
+
+#: src/Colors.vala:64
+msgid "alert, stop, delete, error, recording, video"
+msgstr ""
+
+#: src/Colors.vala:66
+msgid "music, news, update, presentation"
+msgstr ""
+
+#: src/Colors.vala:68
+msgid "caution, warning, mail, history, favorite"
+msgstr ""
+
+#: src/Colors.vala:70
+msgid "success, start, go, new, event, spreadsheet"
+msgstr ""
+
+#: src/Colors.vala:72
+msgid "elementary, default accent, question, help, downloads, document"
+msgstr ""
+
+#: src/Colors.vala:74
+msgid "network, sharing, developer, appcenter, beta, vala, programming"
+msgstr ""
+
+#: src/Colors.vala:76
+msgid "warm neutral, earth tone, brown"
+msgstr ""
+
+#: src/Colors.vala:78
+msgid "system, neutral light"
+msgstr ""
+
+#: src/Colors.vala:80
+msgid "cool neutral, default"
+msgstr ""
+
+#: src/Colors.vala:82
+msgid "neutral dark"
+msgstr ""
+
+#: src/Widgets/ColorButton.vala:59
+#, c-format
+msgid "<b>Uses:</b> %s"
+msgstr ""
 
 #: src/Widgets/ColorVariant.vala:33
 #, c-format

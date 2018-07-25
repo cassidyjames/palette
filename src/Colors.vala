@@ -30,7 +30,7 @@ public enum Color {
     SILVER,
     SLATE,
     BLACK;
-    
+
     public string to_string () {
         switch (this) {
             case STRAWBERRY:
@@ -57,7 +57,34 @@ public enum Color {
                 assert_not_reached ();
         }
     }
-    
+
+    public string uses () {
+        switch (this) {
+            case STRAWBERRY:
+                return _("alert, stop, delete, error, recording, video");
+            case ORANGE:
+                return _("music, news, update, presentation");
+            case BANANA:
+                return _("caution, warning, mail, history, favorite");
+            case LIME:
+                return _("success, start, go, new, event, spreadsheet");
+            case BLUEBERRY:
+                return _("elementary, default accent, question, help, downloads, document");
+            case GRAPE:
+                return _("network, sharing, developer, appcenter, beta, vala, programming");
+            case COCOA:
+                return _("warm neutral, earth tone, brown");
+            case SILVER:
+                return _("system, neutral light");
+            case SLATE:
+                return _("cool neutral, default");
+            case BLACK:
+                return _("neutral dark");
+            default:
+                assert_not_reached ();
+        }
+    }
+
     public string style_class () {
         switch (this) {
             case STRAWBERRY:
@@ -84,7 +111,7 @@ public enum Color {
                 assert_not_reached ();
         }
     }
-    
+
     public Gee.HashMap<int, string> hex () {
         var hex = new Gee.HashMap<int, string> ();
 
@@ -162,7 +189,7 @@ public enum Color {
             default:
                 assert_not_reached ();
         }
-        
+
         return hex;
     }
 }

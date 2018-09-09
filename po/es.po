@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: com.github.cassidyjames.palette\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-24 17:30-0600\n"
-"PO-Revision-Date: 2018-04-15 09:13-0500\n"
+"PO-Revision-Date: 2018-09-09 02:03-0500\n"
 "Last-Translator: Alain M. <alain23@protonmail.com>\n"
 "Language-Team: none\n"
 "Language: es\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:7
 #: data/com.github.cassidyjames.palette.desktop.in:3 src/MainWindow.vala:28
@@ -29,7 +29,6 @@ msgid "View and copy colors from the elementary brand palette"
 msgstr "Vea y copie la paleta de colores del proyecto elementary"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:10
-#, fuzzy
 msgid ""
 "elementary uses a set of bright and friendly colors. Easily access the "
 "entire palette on your local device, see examples of usage, and copy any "
@@ -37,7 +36,7 @@ msgid ""
 msgstr ""
 "elementary usa un conjunto de colores brillantes y amigables. Acceda "
 "fácilmente a toda la paleta en su dispositivo local, puede copiar un color o "
-"una de sus variaciones para pegarlos en sus proyectos."
+"una de sus variaciones para pegarlos dentro de sus proyectos."
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:115
 msgid "Cassidy James Blaede"
@@ -52,9 +51,8 @@ msgid "com.github.cassidyjames.palette"
 msgstr "com.github.cassidyjames.palette"
 
 #: data/com.github.cassidyjames.palette.desktop.in:12
-#, fuzzy
 msgid "color;palette;scheme;copy;paste;swatch;contrast;🎨;"
-msgstr "color;paleta;esquema;copiar;pegar;muestra;contraste;"
+msgstr "color;paleta;esquema;copiar;pegar;muestra;contraste;🎨;"
 
 #: src/Colors.vala:37
 msgid "Strawberry"
@@ -98,48 +96,49 @@ msgstr "Negro"
 
 #: src/Colors.vala:64
 msgid "alert, stop, delete, error, recording, video"
-msgstr ""
+msgstr "alerta, detener, eliminar, error, grabación, video"
 
 #: src/Colors.vala:66
 msgid "music, news, update, presentation"
-msgstr ""
+msgstr "música, noticias, actualización, presentación"
 
 #: src/Colors.vala:68
 msgid "caution, warning, mail, history, favorite"
-msgstr ""
+msgstr "precaución, advertencia, correo, historial, favorito"
 
 #: src/Colors.vala:70
 msgid "success, start, go, new, event, spreadsheet"
-msgstr ""
+msgstr "éxito, inicio, adelante, nuevo, evento, hoja de cálculo"
 
 #: src/Colors.vala:72
 msgid "elementary, default accent, question, help, downloads, document"
 msgstr ""
+"elementary, acento predeterminado, pregunta, ayuda, descargas, documento"
 
 #: src/Colors.vala:74
 msgid "network, sharing, developer, appcenter, beta, vala, programming"
-msgstr ""
+msgstr "red, compartir, desarrollador, appcenter, beta, vala, programación"
 
 #: src/Colors.vala:76
 msgid "warm neutral, earth tone, brown"
-msgstr ""
+msgstr "cálido neutro, tono tierra, marrón"
 
 #: src/Colors.vala:78
 msgid "system, neutral light"
-msgstr ""
+msgstr "sistema, luz neutra"
 
 #: src/Colors.vala:80
 msgid "cool neutral, default"
-msgstr ""
+msgstr "cool neutral, por defecto"
 
 #: src/Colors.vala:82
 msgid "neutral dark"
-msgstr ""
+msgstr "oscuro neutro"
 
 #: src/Widgets/ColorButton.vala:59
 #, c-format
 msgid "<b>Uses:</b> %s"
-msgstr ""
+msgstr "<b>Usos:</b> %s"
 
 #: src/Widgets/ColorVariant.vala:33
 #, c-format

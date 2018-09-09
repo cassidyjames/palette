@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright 2018 Cassidy James Blaede <c@ssidyjam.es> -->
 <component type="desktop">
-  <id>com.github.cassidyjames.palette.desktop</id>
+  <id>com.github.cassidyjames.palette</id>
   <metadata_license>CC0</metadata_license>
   <project_license>GPL-3.0+</project_license>
   <name>Palette</name>
@@ -13,6 +13,11 @@
     <binary>com.github.cassidyjames.palette</binary>
   </provides>
   ​<releases>
+    <release version="2.3.1" date="2018-09-09">
+      <description>
+        <p>Updated translations and under-the-hood cleaning</p>
+      </description>
+    </release>
     <release version="2.3.0" date="2018-07-24">
       <description>
         <p>Add examples of uses to the bottom of each color card</p>
@@ -122,3 +127,4 @@
     <value key="x-appcenter-suggested-price">6</value>
   </custom>
 </component>
+

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.cassidyjames.palette\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-24 17:30-0600\n"
+"POT-Creation-Date: 2018-09-09 10:45-0600\n"
 "PO-Revision-Date: 2018-07-21 22:35+0200\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
 "Language-Team: čeština <>\n"
@@ -20,12 +20,12 @@ msgstr ""
 "X-Generator: Gtranslator 2.91.7\n"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:7
-#: data/com.github.cassidyjames.palette.desktop.in:3 src/MainWindow.vala:28
+#: data/launcher.desktop.in:3 src/MainWindow.vala:28
 msgid "Palette"
 msgstr "Paleta"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:8
-#: data/com.github.cassidyjames.palette.desktop.in:5
+#: data/launcher.desktop.in:5
 msgid "View and copy colors from the elementary brand palette"
 msgstr "Prohlížejte a kopírujte barvy z elementary brand palety"
 
@@ -40,19 +40,19 @@ msgstr ""
 "přístup k celé paletě přímo na vašem místním zařízení a kopírujte jakékoli "
 "variace jednotlivých barev, pro použití ve vašich projektech."
 
-#: data/com.github.cassidyjames.palette.appdata.xml.in:115
+#: data/com.github.cassidyjames.palette.appdata.xml.in:120
 msgid "Cassidy James Blaede"
 msgstr "Cassidy James Blaede"
 
-#: data/com.github.cassidyjames.palette.desktop.in:4
+#: data/launcher.desktop.in:4
 msgid "Color palette viewer"
 msgstr "Color palette viewer"
 
-#: data/com.github.cassidyjames.palette.desktop.in:8
+#: data/launcher.desktop.in:8
 msgid "com.github.cassidyjames.palette"
 msgstr "com.github.cassidyjames.palette"
 
-#: data/com.github.cassidyjames.palette.desktop.in:12
+#: data/launcher.desktop.in:12
 #, fuzzy
 msgid "color;palette;scheme;copy;paste;swatch;contrast;🎨;"
 msgstr "barva;paleta;schéma;kopírovat;vložit;kontrast;color;palette;"

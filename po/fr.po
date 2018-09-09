@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.cassidyjames.palette\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-24 17:30-0600\n"
+"POT-Creation-Date: 2018-09-09 10:45-0600\n"
 "PO-Revision-Date: 2018-04-11 15:37-0200\n"
 "Last-Translator: Arthur Soulie <arthur.soulie@tuta.io>\n"
 "Language-Team: French\n"
@@ -18,12 +18,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:7
-#: data/com.github.cassidyjames.palette.desktop.in:3 src/MainWindow.vala:28
+#: data/launcher.desktop.in:3 src/MainWindow.vala:28
 msgid "Palette"
 msgstr "Palette"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:8
-#: data/com.github.cassidyjames.palette.desktop.in:5
+#: data/launcher.desktop.in:5
 msgid "View and copy colors from the elementary brand palette"
 msgstr "Visualisez et copiez la palette de couleurs d'elementary"
 
@@ -38,19 +38,19 @@ msgstr ""
 "la palette de couleur entiere sur votre appareil, vous pourrez alors copier "
 "une couleur ou une de ses variations pour les coller dans vos projets."
 
-#: data/com.github.cassidyjames.palette.appdata.xml.in:115
+#: data/com.github.cassidyjames.palette.appdata.xml.in:120
 msgid "Cassidy James Blaede"
 msgstr "Cassidy James Blaede"
 
-#: data/com.github.cassidyjames.palette.desktop.in:4
+#: data/launcher.desktop.in:4
 msgid "Color palette viewer"
 msgstr "Cassidy James Blaede"
 
-#: data/com.github.cassidyjames.palette.desktop.in:8
+#: data/launcher.desktop.in:8
 msgid "com.github.cassidyjames.palette"
 msgstr "com.github.cassidyjames.palette"
 
-#: data/com.github.cassidyjames.palette.desktop.in:12
+#: data/launcher.desktop.in:12
 #, fuzzy
 msgid "color;palette;scheme;copy;paste;swatch;contrast;🎨;"
 msgstr "color;palette;scheme;copy;paste;swatch;contrast;"

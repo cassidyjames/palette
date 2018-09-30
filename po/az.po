@@ -24,7 +24,7 @@ msgstr "Palitra"
 #: data/com.github.cassidyjames.palette.appdata.xml.in:8
 #: data/launcher.desktop.in:5
 msgid "View and copy colors from the elementary brand palette"
-msgstr "Elementar marka palitrasında rənglərə baxın və kopyalayın"
+msgstr "elementary marka palitrasında rənglərə baxın və kopyalayın"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:10
 msgid ""
@@ -32,7 +32,7 @@ msgid ""
 "entire palette on your local device, see examples of usage, and copy any "
 "variation of each color to paste into your own projects."
 msgstr ""
-"elementar parlaq və rahat rənglər dəstini istifadə edir. Yerli cihazınızdakı"
+"elementary parlaq və rahat rənglər dəstini istifadə edir. Yerli cihazınızdakı"
 "bütün palitraya asanlıqla daxil olun, istifadə nümunələrinə baxın"
 "və hər bir rəngin dəyişməsini öz layihələrinizdə istifadə edin."
 

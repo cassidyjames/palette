@@ -13,6 +13,11 @@
     <binary>com.github.cassidyjames.palette</binary>
   </provides>
   ​<releases>
+    <release version="2.3.2" date="2018-09-30">
+      <description>
+        <p>Salam! Initial Azerbaijani translations thanks to manymous</p>
+      </description>
+    </release>
     <release version="2.3.1" date="2018-09-09">
       <description>
         <p>Updated translations and under-the-hood cleaning</p>

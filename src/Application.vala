@@ -22,7 +22,7 @@
 public class Palette : Gtk.Application {
     public static GLib.Settings settings;
     private uint configure_id;
-    public const uint CONFIGURE_ID_TIMEOUT = 100;  // 100ms
+    private const uint CONFIGURE_ID_TIMEOUT = 100;
 
     public Palette () {
         Object (application_id: "com.github.cassidyjames.palette",

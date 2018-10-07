@@ -1,14 +1,14 @@
 [![Build Status](https://travis-ci.org/cassidyjames/palette.svg?branch=master)](https://travis-ci.org/cassidyjames/palette)
 
 <p align="center">
-  <img src="https://cdn.rawgit.com/cassidyjames/palette/76408ec21747b96b49cccc38249129a81d5724a2/data/icons/128.svg" alt="Icon" />
+  <img src="data/icons/128.svg" alt="Icon" />
 </p>
 <h1 align="center">Palette</h1>
 <p align="center">
   <a href="https://appcenter.elementary.io/com.github.cassidyjames.palette"><img src="https://appcenter.elementary.io/badge.svg" alt="Get it on AppCenter" /></a>
 </p>
 
-![Screenshot](data/screenshots/screenshot-lime.png)
+![Screenshot](data/screenshots/screenshot.png)
 
 ## View and copy colors from the elementary brand palette
 

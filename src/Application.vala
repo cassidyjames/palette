@@ -20,9 +20,15 @@
 */
 
 public class Palette : Gtk.Application {
+    public static GLib.Settings settings;
+
     public Palette () {
         Object (application_id: "com.github.cassidyjames.palette",
         flags: ApplicationFlags.FLAGS_NONE);
+    }
+
+    static construct {
+        settings = new Settings ("com.github.cassidyjames.palette");
     }
 
     protected override void activate () {
@@ -32,6 +38,14 @@ public class Palette : Gtk.Application {
         }
 
         var app_window = new MainWindow (this);
+
+        var window_x = settings.get_int ("window-x");
+        var window_y = settings.get_int ("window-y");
+
+        if (window_x != -1 ||  window_y != -1) {
+            app_window.move (window_x, window_y);
+        }
+
         app_window.show_all ();
 
         var quit_action = new SimpleAction ("quit", null);
@@ -57,3 +71,4 @@ public class Palette : Gtk.Application {
         return app.run (args);
     }
 }
+

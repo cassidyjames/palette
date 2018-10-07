@@ -20,6 +20,8 @@
 */
 
 public class ColorVariant : Gtk.Button {
+    public static GLib.Settings settings;
+
     public Color color { get; construct; }
     public int variant { get; construct; }
     public Gtk.Popover color_menu { get; construct; }
@@ -60,6 +62,10 @@ public class ColorVariant : Gtk.Button {
         hex_label.valign = Gtk.Align.CENTER;
         hex_label.get_style_context ().add_class ("monospace");
 
+        var hex_label_revealer = new Gtk.Revealer ();
+        hex_label_revealer.transition_type = Gtk.RevealerTransitionType.CROSSFADE;
+        hex_label_revealer.add (hex_label);
+
         // Build CSS color constant variable name
         string caps = color.to_string ().replace ("COLOR_", "");
         string css_var = "@%s_%i".printf (caps, variant);
@@ -70,10 +76,16 @@ public class ColorVariant : Gtk.Button {
         const_label.valign = Gtk.Align.CENTER;
         const_label.get_style_context ().add_class ("monospace");
 
+        var const_label_revealer = new Gtk.Revealer ();
+        const_label_revealer.transition_type = Gtk.RevealerTransitionType.CROSSFADE;
+        const_label_revealer.add (const_label);
+
         var grid = new Gtk.Grid ();
         grid.attach (variant_label, 0, 0);
-        grid.attach (hex_label,     1, 0);
-        grid.attach (const_label,   2, 0);
+
+        // Intentionally overlapping as they should never appear at the same time.
+        grid.attach (hex_label_revealer, 1, 0);
+        grid.attach (const_label_revealer, 1, 0);
 
         this.add (grid);
 
@@ -87,8 +99,9 @@ public class ColorVariant : Gtk.Button {
             tooltip_text = _("Copy %s to clipboard").printf (to_copy);
         });
 
-        toggle.bind_property ("active", const_label, "visible");
-        toggle.bind_property ("active", hex_label, "visible", BindingFlags.INVERT_BOOLEAN);
+        Palette.settings.bind ("developer-mode", toggle, "active", SettingsBindFlags.DEFAULT);
+        Palette.settings.bind ("developer-mode", const_label_revealer, "reveal-child", SettingsBindFlags.GET);
+        Palette.settings.bind ("developer-mode", hex_label_revealer, "reveal-child", SettingsBindFlags.GET | SettingsBindFlags.INVERT_BOOLEAN);
 
         this.clicked.connect (() => {
             Gtk.Clipboard.get_default (this.get_display ()).set_text (to_copy, -1);

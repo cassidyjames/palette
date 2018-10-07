@@ -7,7 +7,13 @@
   <name>Palette</name>
   <summary>View and copy colors from the elementary brand palette</summary>
   <description>
-    <p>elementary uses a set of bright and friendly colors. Easily access the entire palette on your local device, see examples of usage, and copy any variation of each color to paste into your own projects.</p>
+    <p>elementary uses a set of bright and friendly colors. Easily access the entire official color palette on your local device, see examples of usage, and copy any variation of each color to paste into your own projects.</p>
+    <p>Handy features:</p>
+    <ul>
+      <li>Clean and straightforward design</li>
+      <li>Click to copy any color to your clipboard</li>
+      <li>Supports both hex values and Gtk.CSS color constants</li>
+    </ul>
   </description>
   <provides>
     <binary>com.github.cassidyjames.palette</binary>
@@ -15,9 +21,9 @@
   ​<releases>
     <release version="2.4.0" date="2018-10-06">
       <description>
-        <p>Developer Mode</p>
+        <p>Developer Mode 👩‍💻</p>
         <ul>
-          <li>New toggle for Gtk.CSS color constants</li>
+          <li>Gtk.CSS color constants! Just flip the toggle.</li>
           <li>Window position is remembered</li>
           <li>Refreshed design with less repetition and larger color names</li>
         </ul>

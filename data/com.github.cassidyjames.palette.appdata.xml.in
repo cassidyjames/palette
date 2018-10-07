@@ -13,6 +13,16 @@
     <binary>com.github.cassidyjames.palette</binary>
   </provides>
   ​<releases>
+    <release version="2.4.0" date="2018-10-06">
+      <description>
+        <p>Developer Mode</p>
+        <ul>
+          <li>New toggle for Gtk.CSS color constants</li>
+          <li>Window position is remembered</li>
+          <li>Refreshed design with less repetition and larger color names</li>
+        </ul>
+      </description>
+    </release>
     <release version="2.3.2" date="2018-09-30">
       <description>
         <p>Salam! Initial Azerbaijani translations thanks to manymous</p>
@@ -87,10 +97,13 @@
   </releases>
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/cassidyjames/palette/master/data/screenshots/screenshot-lime.png</image>
+      <image>https://raw.githubusercontent.com/cassidyjames/palette/master/data/screenshots/screenshot.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/cassidyjames/palette/master/data/screenshots/screenshot.png</image>
+      <image>https://raw.githubusercontent.com/cassidyjames/palette/master/data/screenshots/screenshot-strawberry-hex.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/cassidyjames/palette/master/data/screenshots/screenshot-grape-const.png</image>
     </screenshot>
   </screenshots>
   <content_rating type="oars-1.1">

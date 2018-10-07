@@ -50,3 +50,7 @@ popover button:last-child,
     border-bottom-right-radius: 3px;
 }
 
+image {
+  color: inherit;
+}
+

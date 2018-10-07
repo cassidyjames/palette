@@ -31,7 +31,7 @@ public enum Color {
     SLATE,
     BLACK;
 
-    public string to_string () {
+    public string pretty () {
         switch (this) {
             case STRAWBERRY:
                 return _("Strawberry");

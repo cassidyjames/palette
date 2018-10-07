@@ -41,7 +41,7 @@ public class ColorButton : Gtk.MenuButton {
             height_request: 128,
             width_request: 128,
             color: color,
-            tooltip_text: color.to_string ()
+            tooltip_text: color.pretty ()
         );
     }
 
@@ -56,6 +56,21 @@ public class ColorButton : Gtk.MenuButton {
         color_menu.add (color_grid);
         color_menu.position = Gtk.PositionType.BOTTOM;
 
+        var title = new Gtk.Label (color.pretty ());
+        title.halign = Gtk.Align.START;
+        title.hexpand = true;
+        title.margin_start = title.margin_end = 6;
+        title.margin_top = 6;
+
+        var title_context = title.get_style_context ();
+        title_context.add_class (Granite.STYLE_CLASS_H2_LABEL);
+        title_context.add_class ("fg-%s-%i".printf (color.style_class (), 900));
+
+        var toggle = new Granite.ModeSwitch.from_icon_name ("preferences-color-symbolic", "applications-development-symbolic");
+        toggle.primary_icon_tooltip_text = ("Color in Hex");
+        toggle.secondary_icon_tooltip_text = ("CSS Constant");
+        toggle.valign = Gtk.Align.CENTER;
+
         var uses_label = new Gtk.Label (_("<b>Uses:</b> %s").printf (color.uses ()));
         uses_label.margin = 6;
         uses_label.max_width_chars = 30;
@@ -64,15 +79,17 @@ public class ColorButton : Gtk.MenuButton {
         uses_label.xalign = 0;
         uses_label.get_style_context ().add_class ("fg-%s-%i".printf (color.style_class (), 900));
 
-        int i = 0;
+        int row = 1;
         foreach (unowned int variant in VARIANTS) {
-            var color_variant = new ColorVariant (color, variant, color_menu);
-            color_grid.attach (color_variant, 0, i);
+            var color_variant = new ColorVariant (color, variant, color_menu, toggle);
+            color_grid.attach (color_variant, 0, row++, 2);
             add_styles (color.style_class (), variant, color.hex ()[variant]);
-            i++;
         }
 
-        color_grid.attach (uses_label, 0, i);
+        int title_row = row++;
+        color_grid.attach (title, 0, title_row);
+        color_grid.attach (toggle, 1, title_row);
+        color_grid.attach (uses_label, 0, row++, 2);
 
         color_context.add_class ("%s-%i".printf (color.style_class (), 500));
         color_grid.show_all ();

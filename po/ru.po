@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.cassidyjames.palette\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 10:45-0600\n"
+"POT-Creation-Date: 2018-10-06 23:58-0600\n"
 "PO-Revision-Date: 2018-05-18 12:50+0400\n"
 "Last-Translator: Andrey Kultyapov <camellan@yandex.ru>\n"
 "Language-Team: \n"
@@ -37,14 +37,30 @@ msgstr "Просмотр и копирование цветов из станд�
 #, fuzzy
 msgid ""
 "elementary uses a set of bright and friendly colors. Easily access the "
-"entire palette on your local device, see examples of usage, and copy any "
-"variation of each color to paste into your own projects."
+"entire official color palette on your local device, see examples of usage, "
+"and copy any variation of each color to paste into your own projects."
 msgstr ""
 "elementary использует множество ярких цветов. С лёгкостью получите доступ ко "
 "всей палитре на локальном устройстве, плюс копируйте любые вариации цвета, "
 "чтобы использовать в своих проектах."
 
-#: data/com.github.cassidyjames.palette.appdata.xml.in:120
+#: data/com.github.cassidyjames.palette.appdata.xml.in:11
+msgid "Handy features:"
+msgstr ""
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:13
+msgid "Clean and straightforward design"
+msgstr ""
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:14
+msgid "Click to copy any color to your clipboard"
+msgstr ""
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:15
+msgid "Supports both hex values and Gtk.CSS color constants"
+msgstr ""
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:144
 msgid "Cassidy James Blaede"
 msgstr "Cassidy James Blaede"
 
@@ -141,12 +157,20 @@ msgstr ""
 msgid "neutral dark"
 msgstr ""
 
-#: src/Widgets/ColorButton.vala:59
+#: src/Widgets/ColorButton.vala:70
+msgid "Hex value"
+msgstr ""
+
+#: src/Widgets/ColorButton.vala:71
+msgid "Gtk.CSS color constant"
+msgstr ""
+
+#: src/Widgets/ColorButton.vala:77
 #, c-format
 msgid "<b>Uses:</b> %s"
 msgstr ""
 
-#: src/Widgets/ColorVariant.vala:33
+#: src/Widgets/ColorVariant.vala:51 src/Widgets/ColorVariant.vala:99
 #, c-format
 msgid "Copy %s to clipboard"
 msgstr "Копировать %s в буфер обмена"

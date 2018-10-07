@@ -13,6 +13,12 @@ foreach i : icon_sizes
     )
 endforeach
 
+install_data (
+    'gschema.xml',
+    install_dir: join_paths (get_option ('datadir'), 'glib-2.0', 'schemas'),
+    rename: meson.project_name () + '.gschema.xml'
+)
+
 i18n.merge_file(
     input: 'launcher.desktop.in',
     output: meson.project_name() + '.desktop',

@@ -20,9 +20,17 @@
 */
 
 public class Palette : Gtk.Application {
+    public static GLib.Settings settings;
+    private uint configure_id;
+    private const uint CONFIGURE_ID_TIMEOUT = 100;
+
     public Palette () {
         Object (application_id: "com.github.cassidyjames.palette",
         flags: ApplicationFlags.FLAGS_NONE);
+    }
+
+    static construct {
+        settings = new Settings ("com.github.cassidyjames.palette");
     }
 
     protected override void activate () {
@@ -32,6 +40,30 @@ public class Palette : Gtk.Application {
         }
 
         var app_window = new MainWindow (this);
+
+        var position = settings.get_value ("window-position");
+        if (position.n_children () == 2) {
+            var x = (int32) position.get_child_value (0);
+            var y = (int32) position.get_child_value (1);
+
+            app_window.move (x, y);
+        }
+
+        app_window.configure_event.connect (() => {
+            if (configure_id != 0) {
+                GLib.Source.remove (configure_id);
+            }
+
+            configure_id = Timeout.add (CONFIGURE_ID_TIMEOUT, () => {
+                configure_id = 0;
+                save_window_geometry (app_window);
+
+                return false;
+            });
+
+            return false;
+        });
+
         app_window.show_all ();
 
         var quit_action = new SimpleAction ("quit", null);
@@ -50,6 +82,12 @@ public class Palette : Gtk.Application {
         });
     }
 
+    private void save_window_geometry (Gtk.Window window) {
+        int root_x, root_y;
+        window.get_position (out root_x, out root_y);
+        Palette.settings.set_value ("window-position", new int[] { root_x, root_y });
+    }
+
     private static int main (string[] args) {
         Gtk.init (ref args);
 
@@ -57,3 +95,4 @@ public class Palette : Gtk.Application {
         return app.run (args);
     }
 }
+

@@ -67,8 +67,8 @@ public class ColorButton : Gtk.MenuButton {
         title_context.add_class ("fg-%s-%i".printf (color.style_class (), 900));
 
         var toggle = new Granite.ModeSwitch.from_icon_name ("preferences-color-symbolic", "applications-development-symbolic");
-        toggle.primary_icon_tooltip_text = ("Color in Hex");
-        toggle.secondary_icon_tooltip_text = ("CSS Constant");
+        toggle.primary_icon_tooltip_text = (_("Hex value"));
+        toggle.secondary_icon_tooltip_text = (_("Gtk.CSS color constant"));
         toggle.valign = Gtk.Align.CENTER;
 
         var uses_label = new Gtk.Label (_("<b>Uses:</b> %s").printf (color.uses ()));

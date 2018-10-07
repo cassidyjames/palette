@@ -83,7 +83,7 @@ public class ColorVariant : Gtk.Button {
         var grid = new Gtk.Grid ();
         grid.attach (variant_label, 0, 0);
 
-        // Intentionally overlapping as they should never appear at the same time.
+        // Intentionally overlapping as they cannot appear at the same time.
         grid.attach (hex_label_revealer, 1, 0);
         grid.attach (const_label_revealer, 1, 0);
 

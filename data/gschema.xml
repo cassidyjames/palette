@@ -12,5 +12,11 @@
       <description>i.e. show Gtk.CSS color constants instead of hex values</description>
     </key>
   </schema>
+    <key name="mini-mode" type="b">
+      <default>false</default>
+      <summary>Mini mode</summary>
+      <description>Whether or not Palette is in a miniature, docked mode instead of the standard window</description>
+    </key>
+  </schema>
 </schemalist>
 

@@ -20,12 +20,14 @@
 */
 
 public class ColorVariant : Gtk.Button {
-    public static GLib.Settings settings;
-
     public Color color { get; construct; }
     public int variant { get; construct; }
     public Gtk.Popover color_menu { get; construct; }
     public Granite.ModeSwitch toggle { get; construct; }
+
+    private Gtk.Label variant_label;
+    private Gtk.Revealer hex_label_revealer;
+    private Gtk.Revealer const_label_revealer;
 
     public string to_copy;
 
@@ -50,7 +52,7 @@ public class ColorVariant : Gtk.Button {
         to_copy = hex;
         tooltip_text = _("Copy %s to clipboard").printf (to_copy);
 
-        var variant_label = new Gtk.Label ("<b>%i</b>".printf (variant));
+        variant_label = new Gtk.Label ("<b>%i</b>".printf (variant));
         variant_label.expand = true;
         variant_label.halign = Gtk.Align.START;
         variant_label.use_markup = true;
@@ -62,7 +64,7 @@ public class ColorVariant : Gtk.Button {
         hex_label.valign = Gtk.Align.CENTER;
         hex_label.get_style_context ().add_class ("monospace");
 
-        var hex_label_revealer = new Gtk.Revealer ();
+        hex_label_revealer = new Gtk.Revealer ();
         hex_label_revealer.transition_type = Gtk.RevealerTransitionType.CROSSFADE;
         hex_label_revealer.add (hex_label);
 
@@ -76,7 +78,7 @@ public class ColorVariant : Gtk.Button {
         const_label.valign = Gtk.Align.CENTER;
         const_label.get_style_context ().add_class ("monospace");
 
-        var const_label_revealer = new Gtk.Revealer ();
+        const_label_revealer = new Gtk.Revealer ();
         const_label_revealer.transition_type = Gtk.RevealerTransitionType.CROSSFADE;
         const_label_revealer.add (const_label);
 
@@ -99,14 +101,22 @@ public class ColorVariant : Gtk.Button {
             tooltip_text = _("Copy %s to clipboard").printf (to_copy);
         });
 
-        Palette.settings.bind ("developer-mode", toggle, "active", SettingsBindFlags.DEFAULT);
-        Palette.settings.bind ("developer-mode", const_label_revealer, "reveal-child", SettingsBindFlags.GET);
-        Palette.settings.bind ("developer-mode", hex_label_revealer, "reveal-child", SettingsBindFlags.GET | SettingsBindFlags.INVERT_BOOLEAN);
-
         this.clicked.connect (() => {
             Gtk.Clipboard.get_default (this.get_display ()).set_text (to_copy, -1);
             color_menu.hide ();
         });
+    }
+
+    public override void realize () {
+        base.realize ();
+
+        Palette.settings.bind ("developer-mode", toggle, "active", SettingsBindFlags.DEFAULT);
+        Palette.settings.bind ("developer-mode", const_label_revealer, "reveal-child", SettingsBindFlags.GET);
+        Palette.settings.bind ("developer-mode", hex_label_revealer, "reveal-child", SettingsBindFlags.GET | SettingsBindFlags.INVERT_BOOLEAN);
+
+        Palette.settings.bind ("mini-mode", variant_label, "visible", SettingsBindFlags.GET | SettingsBindFlags.INVERT_BOOLEAN);
+        Palette.settings.bind ("mini-mode", const_label_revealer, "visible", SettingsBindFlags.GET | SettingsBindFlags.INVERT_BOOLEAN);
+        Palette.settings.bind ("mini-mode", hex_label_revealer, "visible", SettingsBindFlags.GET | SettingsBindFlags.INVERT_BOOLEAN);
     }
 }
 

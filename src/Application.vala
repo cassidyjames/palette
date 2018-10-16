@@ -21,6 +21,9 @@
 
 public class Palette : Gtk.Application {
     public static GLib.Settings settings;
+    public static MiniWindow mini_window;
+    public static MainWindow main_window;
+
     private uint configure_id;
     private const uint CONFIGURE_ID_TIMEOUT = 100;
 
@@ -39,53 +42,80 @@ public class Palette : Gtk.Application {
             return;
         }
 
-        var app_window = new MainWindow (this);
+        // Handle quitting
+        var quit_action = new SimpleAction ("quit", null);
 
-        var position = settings.get_value ("window-position");
-        if (position.n_children () == 2) {
-            var x = (int32) position.get_child_value (0);
-            var y = (int32) position.get_child_value (1);
+        add_action (quit_action);
+        set_accels_for_action ("app.quit", {"Escape"});
 
-            app_window.move (x, y);
-        }
+        quit_action.activate.connect (() => {
+            if (main_window != null) {
+                main_window.destroy ();
+            }
 
-        app_window.configure_event.connect (() => {
+            if (mini_window != null) {
+                mini_window.destroy ();
+            }
+        });
+
+        // Set up main window
+        main_window = new MainWindow (this);
+        main_window.configure_event.connect (() => {
             if (configure_id != 0) {
                 GLib.Source.remove (configure_id);
             }
 
             configure_id = Timeout.add (CONFIGURE_ID_TIMEOUT, () => {
                 configure_id = 0;
-                save_window_geometry (app_window);
+                save_window_geometry (main_window);
 
                 return false;
             });
 
             return false;
         });
+        main_window.destroy.connect (() => {
+            quit_action.activate (null);
+        });
 
-        app_window.show_all ();
 
-        var quit_action = new SimpleAction ("quit", null);
+        // Set up mini window
+        mini_window = new MiniWindow (this);
+        mini_window.configure_event.connect (() => {
+            if (configure_id != 0) {
+                GLib.Source.remove (configure_id);
+            }
 
-        add_action (quit_action);
-        set_accels_for_action ("app.quit", {"Escape"});
+            configure_id = Timeout.add (CONFIGURE_ID_TIMEOUT, () => {
+                configure_id = 0;
+                save_window_geometry (mini_window, "mini-position");
 
+                return false;
+            });
+
+            return false;
+        });
+        mini_window.destroy.connect (() => {
+            quit_action.activate (null);
+        });
+
+        // Show the correct window
+        if (settings.get_boolean ("mini-mode")) {
+            mini_window.show_all ();
+        } else {
+            main_window.show_all ();
+        }
+
+        // CSS provider
         var provider = new Gtk.CssProvider ();
         provider.load_from_resource ("/com/github/cassidyjames/palette/Application.css");
         Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
-
-        quit_action.activate.connect (() => {
-            if (app_window != null) {
-                app_window.destroy ();
-            }
-        });
     }
 
-    private void save_window_geometry (Gtk.Window window) {
+    private void save_window_geometry (Gtk.Window window, string key = "window-position") {
         int root_x, root_y;
         window.get_position (out root_x, out root_y);
-        Palette.settings.set_value ("window-position", new int[] { root_x, root_y });
+        Palette.settings.set_value (key, new int[] { root_x, root_y });
     }
 
     private static int main (string[] args) {

@@ -20,8 +20,6 @@
 */
 
 public class MiniWindow : Gtk.Window {
-    public static GLib.Settings settings;
-
     public MiniWindow (Gtk.Application application) {
         Object (
             application: application,
@@ -101,21 +99,27 @@ public class MiniWindow : Gtk.Window {
 
     public override void realize () {
         base.realize ();
+        int32 x = 0, y = 0;
 
-        int x = 0, y = 0;
+        var mini_position = Palette.settings.get_value ("mini-position");
+        if (mini_position.n_children () == 2) {
+            x = (int32) mini_position.get_child_value (0);
+            y = (int32) mini_position.get_child_value (1);
+        } else {
+            int width, height;
+            get_size (out width, out height);
 
-        int width, height;
-        get_size (out width, out height);
+            var screen = Gdk.Screen.get_default ();
+            var display = screen.get_display ();
+            var monitor = display.get_primary_monitor ();
+            var geometry = monitor.geometry;
+            y = geometry.height / 2 - height / 2;
 
-        var screen = Gdk.Screen.get_default ();
-        var display = screen.get_display ();
-        var monitor = display.get_primary_monitor ();
-        var geometry = monitor.geometry;
-        y = geometry.height / 2 - height / 2;
-        critical ("geometry.width: %i", geometry.width);
-        critical ("geometry.height: %i", geometry.height);
-        critical ("height: %i", height);
-        critical ("y: %i", y);
+            critical ("geometry.width: %i", geometry.width);
+            critical ("geometry.height: %i", geometry.height);
+            critical ("height: %i", height);
+            critical ("y: %i", y);
+        }
 
         move (x, y);
     }

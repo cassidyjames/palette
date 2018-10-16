@@ -45,14 +45,6 @@ public class Palette : Gtk.Application {
         main_window = new MainWindow (this);
         mini_window = new MiniWindow (this);
 
-        var main_position = settings.get_value ("window-position");
-        if (main_position.n_children () == 2) {
-            var x = (int32) main_position.get_child_value (0);
-            var y = (int32) main_position.get_child_value (1);
-
-            main_window.move (x, y);
-        }
-
         main_window.configure_event.connect (() => {
             if (configure_id != 0) {
                 GLib.Source.remove (configure_id);
@@ -61,6 +53,21 @@ public class Palette : Gtk.Application {
             configure_id = Timeout.add (CONFIGURE_ID_TIMEOUT, () => {
                 configure_id = 0;
                 save_window_geometry (main_window);
+
+                return false;
+            });
+
+            return false;
+        });
+
+        mini_window.configure_event.connect (() => {
+            if (configure_id != 0) {
+                GLib.Source.remove (configure_id);
+            }
+
+            configure_id = Timeout.add (CONFIGURE_ID_TIMEOUT, () => {
+                configure_id = 0;
+                save_window_geometry (mini_window, "mini-position");
 
                 return false;
             });
@@ -90,10 +97,10 @@ public class Palette : Gtk.Application {
         });
     }
 
-    private void save_window_geometry (Gtk.Window window) {
+    private void save_window_geometry (Gtk.Window window, string key = "window-position") {
         int root_x, root_y;
         window.get_position (out root_x, out root_y);
-        Palette.settings.set_value ("window-position", new int[] { root_x, root_y });
+        Palette.settings.set_value (key, new int[] { root_x, root_y });
     }
 
     private static int main (string[] args) {

@@ -95,5 +95,17 @@ public class MainWindow : Gtk.Window {
             hide ();
         });
     }
+
+    public override void realize () {
+        base.realize ();
+
+        var main_position = Palette.settings.get_value ("window-position");
+        if (main_position.n_children () == 2) {
+            var x = (int32) main_position.get_child_value (0);
+            var y = (int32) main_position.get_child_value (1);
+
+            move (x, y);
+        }
+    }
 }
 

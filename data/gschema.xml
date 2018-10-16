@@ -11,7 +11,6 @@
       <summary>Developer mode</summary>
       <description>i.e. show Gtk.CSS color constants instead of hex values</description>
     </key>
-  </schema>
     <key name="mini-mode" type="b">
       <default>false</default>
       <summary>Mini mode</summary>

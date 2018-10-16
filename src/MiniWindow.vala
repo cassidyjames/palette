@@ -55,16 +55,16 @@ public class MiniWindow : Gtk.Window {
         header_context.add_class ("default-decoration");
         header_context.add_class (Gtk.STYLE_CLASS_FLAT);
 
-        var strawberry_button = new ColorButton (Color.STRAWBERRY, 24);
-        var orange_button = new ColorButton (Color.ORANGE, 24);
-        var banana_button = new ColorButton (Color.BANANA, 24);
-        var lime_button = new ColorButton (Color.LIME, 24);
-        var blueberry_button = new ColorButton (Color.BLUEBERRY, 24);
-        var grape_button = new ColorButton (Color.GRAPE, 24);
-        var cocoa_button = new ColorButton (Color.COCOA, 24);
-        var silver_button = new ColorButton (Color.SILVER, 24);
-        var slate_button = new ColorButton (Color.SLATE, 24);
-        var black_button = new ColorButton (Color.BLACK, 24);
+        var strawberry_button = new ColorButton (Color.STRAWBERRY, 32);
+        var orange_button = new ColorButton (Color.ORANGE, 32);
+        var banana_button = new ColorButton (Color.BANANA, 32);
+        var lime_button = new ColorButton (Color.LIME, 32);
+        var blueberry_button = new ColorButton (Color.BLUEBERRY, 32);
+        var grape_button = new ColorButton (Color.GRAPE, 32);
+        var cocoa_button = new ColorButton (Color.COCOA, 32);
+        var silver_button = new ColorButton (Color.SILVER, 32);
+        var slate_button = new ColorButton (Color.SLATE, 32);
+        var black_button = new ColorButton (Color.BLACK, 32);
 
         var mini_layout = new Gtk.Grid ();
         mini_layout.row_spacing = mini_layout.margin_bottom = 12;

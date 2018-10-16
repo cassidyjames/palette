@@ -50,11 +50,11 @@ public class ColorButton : Gtk.MenuButton {
         color_context.add_class ("circular");
 
         var color_grid = new Gtk.Grid ();
-       color_grid.width_request = 200;
+       color_grid.width_request = 32;
 
         var color_menu = new Gtk.Popover (this);
         color_menu.add (color_grid);
-        color_menu.position = Gtk.PositionType.RIGHT;
+        color_menu.position = Gtk.PositionType.BOTTOM;
 
         var title = new Gtk.Label (color.pretty ());
         title.halign = Gtk.Align.START;
@@ -97,6 +97,10 @@ public class ColorButton : Gtk.MenuButton {
         color_context.add_class ("%s-%i".printf (color.style_class (), 500));
         color_grid.show_all ();
         popover = color_menu;
+
+        Palette.settings.bind ("mini-mode", title, "visible", SettingsBindFlags.GET | SettingsBindFlags.INVERT_BOOLEAN);
+        Palette.settings.bind ("mini-mode", toggle, "visible", SettingsBindFlags.GET | SettingsBindFlags.INVERT_BOOLEAN);
+        Palette.settings.bind ("mini-mode", uses_label, "visible", SettingsBindFlags.GET | SettingsBindFlags.INVERT_BOOLEAN);
     }
 
     private void add_styles (string class_name, int variant, string bg_color) {

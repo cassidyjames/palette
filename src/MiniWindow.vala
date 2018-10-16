@@ -81,6 +81,7 @@ public class MiniWindow : Gtk.Window {
 
         var context = get_style_context ();
         context.add_class ("palette");
+        context.add_class ("mini");
         context.add_class ("rounded");
         context.add_class ("flat");
 

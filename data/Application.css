@@ -54,3 +54,17 @@ image {
   color: inherit;
 }
 
+.mini,
+.mini .titlebar {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.mini:backdrop,
+.mini:backdrop .titlebar {
+  background: rgba(255, 255, 255, 0.70);
+}
+
+.mini .titlebar button {
+  color: #333;
+}
+

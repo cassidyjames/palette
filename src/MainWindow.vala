@@ -36,7 +36,7 @@ public class MainWindow : Gtk.Window {
         weak Gtk.IconTheme default_theme = Gtk.IconTheme.get_default ();
         default_theme.add_resource_path ("/com/github/cassidyjames/palette");
 
-        var mini_button = new Gtk.Button.from_icon_name ("zoom-out", Gtk.IconSize.MENU);
+        var mini_button = new Gtk.Button.from_icon_name ("window-minimize-symbolic", Gtk.IconSize.MENU);
         mini_button.tooltip_text = _("Mini mode");
         mini_button.valign = Gtk.Align.CENTER;
 
@@ -68,17 +68,17 @@ public class MainWindow : Gtk.Window {
         main_layout.column_spacing = main_layout.row_spacing = 12;
         main_layout.margin_bottom = main_layout.margin_start = main_layout.margin_end = 12;
 
-        main_layout.attach (strawberry_button, 0, 0, 1, 1);
-        main_layout.attach (orange_button,     1, 0, 1, 1);
-        main_layout.attach (banana_button,     2, 0, 1, 1);
-        main_layout.attach (lime_button,       3, 0, 1, 1);
-        main_layout.attach (blueberry_button,  4, 0, 1, 1);
-        main_layout.attach (grape_button,      5, 0, 1, 1);
+        main_layout.attach (strawberry_button, 0, 0);
+        main_layout.attach (orange_button,     1, 0);
+        main_layout.attach (banana_button,     2, 0);
+        main_layout.attach (lime_button,       3, 0);
+        main_layout.attach (blueberry_button,  4, 0);
+        main_layout.attach (grape_button,      5, 0);
 
-        main_layout.attach (cocoa_button,  0, 1, 1, 1);
-        main_layout.attach (silver_button, 1, 1, 1, 1);
-        main_layout.attach (slate_button,  2, 1, 1, 1);
-        main_layout.attach (black_button,  3, 1, 1, 1);
+        main_layout.attach (cocoa_button,  0, 1);
+        main_layout.attach (silver_button, 1, 1);
+        main_layout.attach (slate_button,  2, 1);
+        main_layout.attach (black_button,  3, 1);
 
         var context = get_style_context ();
         context.add_class ("palette");

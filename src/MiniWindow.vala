@@ -52,9 +52,9 @@ public class MiniWindow : Gtk.Window {
         stick ();
         set_keep_above (true);
 
-        var restore_button = new Gtk.Button.from_icon_name ("window-maximize-symbolic", Gtk.IconSize.MENU);
+        var restore_button = new Gtk.Button.from_icon_name ("window-pop-out-symbolic", Gtk.IconSize.MENU);
         restore_button.halign = Gtk.Align.CENTER;
-        restore_button.tooltip_text = _("Mini mode");
+        restore_button.tooltip_text = _("Windowed mode");
         restore_button.valign = Gtk.Align.CENTER;
 
         var restore_button_context = restore_button.get_style_context ();
@@ -86,16 +86,17 @@ public class MiniWindow : Gtk.Window {
         mini_layout.row_spacing = mini_layout.margin_bottom = 12;
         mini_layout.margin_top = mini_layout.margin_start = mini_layout.margin_end = 6;
 
-        mini_layout.attach (strawberry_button, 0, 0);
-        mini_layout.attach (orange_button,     0, 1);
-        mini_layout.attach (banana_button,     0, 2);
-        mini_layout.attach (lime_button,       0, 3);
-        mini_layout.attach (blueberry_button,  0, 4);
-        mini_layout.attach (grape_button,      0, 5);
-        mini_layout.attach (cocoa_button,      0, 6);
-        mini_layout.attach (silver_button,     0, 7);
-        mini_layout.attach (slate_button,      0, 8);
-        mini_layout.attach (black_button,      0, 9);
+        int row = 0;
+        mini_layout.attach (strawberry_button, 0, row++);
+        mini_layout.attach (orange_button,     0, row++);
+        mini_layout.attach (banana_button,     0, row++);
+        mini_layout.attach (lime_button,       0, row++);
+        mini_layout.attach (blueberry_button,  0, row++);
+        mini_layout.attach (grape_button,      0, row++);
+        mini_layout.attach (cocoa_button,      0, row++);
+        mini_layout.attach (silver_button,     0, row++);
+        mini_layout.attach (slate_button,      0, row++);
+        mini_layout.attach (black_button,      0, row++);
 
         var context = get_style_context ();
         context.add_class ("palette");
@@ -109,7 +110,7 @@ public class MiniWindow : Gtk.Window {
             Palette.settings.set_boolean ("mini-mode", false);
             Palette.main_window.show_all ();
 
-            close ();
+            hide ();
         });
     }
 }

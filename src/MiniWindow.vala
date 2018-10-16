@@ -24,7 +24,8 @@ public class MiniWindow : Gtk.Window {
         Object (
             application: application,
             icon_name: "com.github.cassidyjames.palette",
-            resizable: false
+            resizable: false,
+            skip_taskbar_hint: true
         );
     }
 

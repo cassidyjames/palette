@@ -30,9 +30,6 @@ public class MiniWindow : Gtk.Window {
     }
 
     construct {
-        weak Gtk.IconTheme default_theme = Gtk.IconTheme.get_default ();
-        default_theme.add_resource_path ("/com/github/cassidyjames/palette");
-
         stick ();
         set_keep_above (true);
 

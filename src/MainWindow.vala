@@ -20,8 +20,6 @@
 */
 
 public class MainWindow : Gtk.Window {
-    public static GLib.Settings settings;
-
     public MainWindow (Gtk.Application application) {
         Object (
             application: application,
@@ -32,9 +30,6 @@ public class MainWindow : Gtk.Window {
     }
 
     construct {
-        weak Gtk.IconTheme default_theme = Gtk.IconTheme.get_default ();
-        default_theme.add_resource_path ("/com/github/cassidyjames/palette");
-
         var mini_button = new Gtk.Button.from_icon_name ("window-minimize-symbolic", Gtk.IconSize.MENU);
         mini_button.tooltip_text = _("Mini mode");
         mini_button.valign = Gtk.Align.CENTER;

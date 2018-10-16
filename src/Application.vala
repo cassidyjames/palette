@@ -42,9 +42,24 @@ public class Palette : Gtk.Application {
             return;
         }
 
-        main_window = new MainWindow (this);
-        mini_window = new MiniWindow (this);
+        // Handle quitting
+        var quit_action = new SimpleAction ("quit", null);
 
+        add_action (quit_action);
+        set_accels_for_action ("app.quit", {"Escape"});
+
+        quit_action.activate.connect (() => {
+            if (main_window != null) {
+                main_window.destroy ();
+            }
+
+            if (mini_window != null) {
+                mini_window.destroy ();
+            }
+        });
+
+        // Set up main window
+        main_window = new MainWindow (this);
         main_window.configure_event.connect (() => {
             if (configure_id != 0) {
                 GLib.Source.remove (configure_id);
@@ -59,7 +74,13 @@ public class Palette : Gtk.Application {
 
             return false;
         });
+        main_window.destroy.connect (() => {
+            quit_action.activate (null);
+        });
 
+
+        // Set up mini window
+        mini_window = new MiniWindow (this);
         mini_window.configure_event.connect (() => {
             if (configure_id != 0) {
                 GLib.Source.remove (configure_id);
@@ -74,31 +95,21 @@ public class Palette : Gtk.Application {
 
             return false;
         });
+        mini_window.destroy.connect (() => {
+            quit_action.activate (null);
+        });
 
+        // Show the correct window
         if (settings.get_boolean ("mini-mode")) {
             mini_window.show_all ();
         } else {
             main_window.show_all ();
         }
 
-        var quit_action = new SimpleAction ("quit", null);
-
-        add_action (quit_action);
-        set_accels_for_action ("app.quit", {"Escape"});
-
+        // CSS provider
         var provider = new Gtk.CssProvider ();
         provider.load_from_resource ("/com/github/cassidyjames/palette/Application.css");
         Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
-
-        quit_action.activate.connect (() => {
-            if (main_window != null) {
-                main_window.destroy ();
-            }
-
-            if (mini_window != null) {
-                mini_window.destroy ();
-            }
-        });
     }
 
     private void save_window_geometry (Gtk.Window window, string key = "window-position") {

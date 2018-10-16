@@ -54,7 +54,7 @@ public class ColorButton : Gtk.MenuButton {
 
         var color_menu = new Gtk.Popover (this);
         color_menu.add (color_grid);
-        color_menu.position = Gtk.PositionType.BOTTOM;
+        color_menu.position = Gtk.PositionType.RIGHT;
 
         var title = new Gtk.Label (color.pretty ());
         title.halign = Gtk.Align.START;

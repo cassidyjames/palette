@@ -27,8 +27,7 @@ public class MainWindow : Gtk.Window {
             application: application,
             icon_name: "com.github.cassidyjames.palette",
             resizable: false,
-            title: _("Palette"),
-            window_position: Gtk.WindowPosition.CENTER
+            title: _("Palette")
         );
     }
 
@@ -92,6 +91,7 @@ public class MainWindow : Gtk.Window {
             Palette.settings.set_boolean ("mini-mode", true);
 
             Palette.mini_window.show_all ();
+
             hide ();
         });
     }
@@ -105,6 +105,8 @@ public class MainWindow : Gtk.Window {
             var y = (int32) main_position.get_child_value (1);
 
             move (x, y);
+        } else {
+            window_position = Gtk.WindowPosition.CENTER;
         }
     }
 }

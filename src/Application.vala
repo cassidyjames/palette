@@ -75,7 +75,11 @@ public class Palette : Gtk.Application {
             return false;
         });
 
-        main_window.show_all ();
+        if (settings.get_boolean ("mini-mode")) {
+            mini_window.show_all ();
+        } else {
+            main_window.show_all ();
+        }
 
         var quit_action = new SimpleAction ("quit", null);
 

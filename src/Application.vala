@@ -21,6 +21,9 @@
 
 public class Palette : Gtk.Application {
     public static GLib.Settings settings;
+    public static MiniWindow mini_window;
+    public static MainWindow main_window;
+
     private uint configure_id;
     private const uint CONFIGURE_ID_TIMEOUT = 100;
 
@@ -39,24 +42,25 @@ public class Palette : Gtk.Application {
             return;
         }
 
-        var app_window = new MainWindow (this);
+        main_window = new MainWindow (this);
+        mini_window = new MiniWindow (this);
 
-        var position = settings.get_value ("window-position");
-        if (position.n_children () == 2) {
-            var x = (int32) position.get_child_value (0);
-            var y = (int32) position.get_child_value (1);
+        var main_position = settings.get_value ("window-position");
+        if (main_position.n_children () == 2) {
+            var x = (int32) main_position.get_child_value (0);
+            var y = (int32) main_position.get_child_value (1);
 
-            app_window.move (x, y);
+            main_window.move (x, y);
         }
 
-        app_window.configure_event.connect (() => {
+        main_window.configure_event.connect (() => {
             if (configure_id != 0) {
                 GLib.Source.remove (configure_id);
             }
 
             configure_id = Timeout.add (CONFIGURE_ID_TIMEOUT, () => {
                 configure_id = 0;
-                save_window_geometry (app_window);
+                save_window_geometry (main_window);
 
                 return false;
             });
@@ -64,7 +68,7 @@ public class Palette : Gtk.Application {
             return false;
         });
 
-        app_window.show_all ();
+        main_window.show_all ();
 
         var quit_action = new SimpleAction ("quit", null);
 
@@ -76,8 +80,12 @@ public class Palette : Gtk.Application {
         Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         quit_action.activate.connect (() => {
-            if (app_window != null) {
-                app_window.destroy ();
+            if (main_window != null) {
+                main_window.destroy ();
+            }
+
+            if (mini_window != null) {
+                mini_window.destroy ();
             }
         });
     }

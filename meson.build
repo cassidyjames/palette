@@ -17,6 +17,7 @@ executable(
     'src/Application.vala',
     'src/Colors.vala',
     'src/MainWindow.vala',
+    'src/MiniWindow.vala',
     'src/Widgets/ColorButton.vala',
     'src/Widgets/ColorVariant.vala',
     dependencies: [

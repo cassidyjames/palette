@@ -20,6 +20,8 @@
 */
 
 public class MainWindow : Gtk.Window {
+    public static GLib.Settings settings;
+
     public MainWindow (Gtk.Application application) {
         Object (
             application: application,
@@ -34,8 +36,18 @@ public class MainWindow : Gtk.Window {
         weak Gtk.IconTheme default_theme = Gtk.IconTheme.get_default ();
         default_theme.add_resource_path ("/com/github/cassidyjames/palette");
 
+        var mini_button = new Gtk.Button.from_icon_name ("zoom-out", Gtk.IconSize.MENU);
+        mini_button.tooltip_text = _("Mini mode");
+        mini_button.valign = Gtk.Align.CENTER;
+
+        var mini_button_context = mini_button.get_style_context ();
+        mini_button_context.add_class ("titlebutton");
+        mini_button_context.remove_class ("image-button");
+
         var header = new Gtk.HeaderBar ();
         header.show_close_button = true;
+        header.pack_end (mini_button);
+
         var header_context = header.get_style_context ();
         header_context.add_class ("titlebar");
         header_context.add_class ("default-decoration");
@@ -75,6 +87,13 @@ public class MainWindow : Gtk.Window {
 
         set_titlebar (header);
         add (main_layout);
+
+        mini_button.clicked.connect (() => {
+            Palette.settings.set_boolean ("mini-mode", true);
+
+            Palette.mini_window.show_all ();
+            hide ();
+        });
     }
 }
 

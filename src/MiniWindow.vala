@@ -114,11 +114,6 @@ public class MiniWindow : Gtk.Window {
             var monitor = display.get_primary_monitor ();
             var geometry = monitor.geometry;
             y = geometry.height / 2 - height / 2;
-
-            critical ("geometry.width: %i", geometry.width);
-            critical ("geometry.height: %i", geometry.height);
-            critical ("height: %i", height);
-            critical ("y: %i", y);
         }
 
         move (x, y);

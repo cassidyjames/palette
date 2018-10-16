@@ -34,21 +34,6 @@ public class MiniWindow : Gtk.Window {
         weak Gtk.IconTheme default_theme = Gtk.IconTheme.get_default ();
         default_theme.add_resource_path ("/com/github/cassidyjames/palette");
 
-        int x = 0, y = 0;
-
-        int width, height;
-        get_size (out width, out height);
-
-        var screen = Gdk.Screen.get_default ();
-        var display = screen.get_display ();
-        var monitor = display.get_primary_monitor ();
-        var geometry = monitor.geometry;
-        y = geometry.y / 2 - height / 2;
-        critical ("geometry.y: %i", geometry.y);
-        critical ("height: %i", height);
-        critical ("y: %i", y);
-
-        move (x, y);
         stick ();
         set_keep_above (true);
 
@@ -112,6 +97,27 @@ public class MiniWindow : Gtk.Window {
 
             hide ();
         });
+    }
+
+    public override void realize () {
+        base.realize ();
+
+        int x = 0, y = 0;
+
+        int width, height;
+        get_size (out width, out height);
+
+        var screen = Gdk.Screen.get_default ();
+        var display = screen.get_display ();
+        var monitor = display.get_primary_monitor ();
+        var geometry = monitor.geometry;
+        y = geometry.height / 2 - height / 2;
+        critical ("geometry.width: %i", geometry.width);
+        critical ("geometry.height: %i", geometry.height);
+        critical ("height: %i", height);
+        critical ("y: %i", y);
+
+        move (x, y);
     }
 }
 

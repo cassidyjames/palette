@@ -146,8 +146,6 @@ public class MiniWindow : Gtk.Window {
                 return false;
             });
         }
-
-        critical ("popover_width: %i", popover_width);
     }
 }
 

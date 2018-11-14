@@ -114,6 +114,7 @@ public class ColorButton : Gtk.MenuButton {
                 true,
                 // FIXME: should be something like `color_menu.get_allocated_width ()`,
                 // but that doesn't work the first time the popover is realized.
+                // Consequently, this could be clipped i.e. with long translations.
                 color_menu.width_request
             );
         });

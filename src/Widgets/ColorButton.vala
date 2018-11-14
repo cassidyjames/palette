@@ -55,6 +55,7 @@ public class ColorButton : Gtk.MenuButton {
         var color_menu = new Gtk.Popover (this);
         color_menu.add (color_grid);
         color_menu.position = Gtk.PositionType.BOTTOM;
+        color_menu.width_request = 256;
 
         var title = new Gtk.Label (color.pretty ());
         title.halign = Gtk.Align.START;
@@ -109,16 +110,18 @@ public class ColorButton : Gtk.MenuButton {
             Palette.mini_window.fit_popover (
                 root_x,
                 root_y,
-                geometry.width
+                geometry.width,
+                true,
+                // FIXME: should be something like `color_menu.get_allocated_width ()`,
+                // but that doesn't work the first time the popover is realized.
+                color_menu.width_request
             );
         });
 
         color_menu.unmap.connect (() => {
             Palette.mini_window.fit_popover (
                 root_x,
-                root_y,
-                geometry.width,
-                false
+                root_y
             );
         });
     }

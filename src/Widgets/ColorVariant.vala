@@ -103,7 +103,7 @@ public class ColorVariant : Gtk.Button {
 
         this.clicked.connect (() => {
             Gtk.Clipboard.get_default (this.get_display ()).set_text (to_copy, -1);
-            color_menu.hide ();
+            color_menu.popdown ();
         });
     }
 

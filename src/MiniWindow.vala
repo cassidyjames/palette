@@ -122,7 +122,13 @@ public class MiniWindow : Gtk.Window {
         move (x, y);
     }
 
-    public void fit_popover (int window_x, int window_y, int display_width, bool embiggen = true) {
+    public void fit_popover (
+        int window_x,
+        int window_y,
+        int display_width = 0,
+        bool embiggen = false,
+        int popover_width = 0
+    ) {
         if (embiggen) {
             if (window_x < display_width / 2) {
                 mini_layout.halign = Gtk.Align.START;
@@ -130,7 +136,7 @@ public class MiniWindow : Gtk.Window {
                 mini_layout.halign = Gtk.Align.END;
             }
 
-            width_request = 420;
+            width_request = get_allocated_width () + popover_width;
         } else {
             width_request = -1;
 
@@ -140,6 +146,8 @@ public class MiniWindow : Gtk.Window {
                 return false;
             });
         }
+
+        critical ("popover_width: %i", popover_width);
     }
 }
 

@@ -130,10 +130,12 @@ public class MiniWindow : Gtk.Window {
         int popover_width = 0
     ) {
         if (embiggen) {
-            if (window_x < display_width / 2) {
-                mini_layout.halign = Gtk.Align.START;
-            } else {
+            // If the window is in the right-most quarter of the display, assume
+            // it's docked or close enough to docked to the right
+            if (window_x > display_width * 0.75) {
                 mini_layout.halign = Gtk.Align.END;
+            } else {
+                mini_layout.halign = Gtk.Align.START;
             }
 
             width_request = get_allocated_width () + popover_width;

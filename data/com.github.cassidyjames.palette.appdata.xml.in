@@ -14,15 +14,17 @@
       <li>Click to copy any color to your clipboard</li>
       <li>Supports both hex values and Gtk.CSS color constants</li>
     </ul>
-    <p>Palette also sports a handy dock-like Mini Mode! Shrink the window down while keeping it always-on-top when you need to constantly reference colors, but don’t want it in your way. Mini Mode keeps click-to-copy while tucking away the rest of the UI.</p>
+    <p>Palette also sports a handy dock-like Mini Mode! Shrink the window down while keeping it always-on-top when you need to constantly reference colors, but don’t want it in your way. Mini Mode keeps all of the functionality with a more streamlined workflow.</p>
   </description>
   <provides>
     <binary>com.github.cassidyjames.palette</binary>
   </provides>
   ​<releases>
-    <release version="3.0.0" date="2018-10-16">
+    <release version="3.1.0" date="2018-10-16">
       <description>
-        <p>Brand new Mini Mode</p>
+        <p>Brand New Mini Mode!</p>
+        <p>Hit the new icon in the titlebar to collapse Palette down to a small docked always-on-top window, perfect for keeping it around as part of your workflow. All of the same functionality is available, just more out of the way.</p>
+        <p>Palette remembers where the full-size and mini windows were last open, so drag the mini window to whichever side of the display works best for you.</p>
       </description>
     </release>
     <release version="2.4.0" date="2018-10-06">
@@ -158,8 +160,8 @@
   <url type="bugtracker">https://github.com/cassidyjames/palette/issues</url>
   <url type="translate">https://github.com/cassidyjames/palette/tree/master/po#readme</url>
   <custom>
-    <value key="x-appcenter-color-primary">#525</value>
-    <value key="x-appcenter-color-primary-text">#fffffc</value>
+    <value key="x-appcenter-color-primary">@BANANA_300</value>
+    <value key="x-appcenter-color-primary-text">@BLACK_500</value>
     <value key="x-appcenter-suggested-price">6</value>
   </custom>
 </component>

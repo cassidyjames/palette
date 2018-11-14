@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2018 Cassidy James Blaede (https://cassidyjames.com)
+* Copyright © 2018 Cassidy James Blaede (https://cassidyjames.com)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -30,6 +30,16 @@ public class Palette : Gtk.Application {
     public Palette () {
         Object (application_id: "com.github.cassidyjames.palette",
         flags: ApplicationFlags.FLAGS_NONE);
+    }
+
+    public static Palette _instance = null;
+    public static Palette instance {
+        get {
+            if (_instance == null) {
+                _instance = new Palette ();
+            }
+            return _instance;
+        }
     }
 
     static construct {

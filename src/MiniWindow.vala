@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2018 Cassidy James Blaede (https://cassidyjames.com)
+* Copyright © 2018 Cassidy James Blaede (https://cassidyjames.com)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -20,6 +20,8 @@
 */
 
 public class MiniWindow : Gtk.Window {
+    public Gtk.Grid mini_layout { get; set; }
+
     public MiniWindow (Gtk.Application application) {
         Object (
             application: application,
@@ -63,9 +65,11 @@ public class MiniWindow : Gtk.Window {
         var slate_button = new ColorButton (Color.SLATE, 32);
         var black_button = new ColorButton (Color.BLACK, 32);
 
-        var mini_layout = new Gtk.Grid ();
+        mini_layout = new Gtk.Grid ();
         mini_layout.row_spacing = mini_layout.margin_bottom = 12;
         mini_layout.margin_top = mini_layout.margin_start = mini_layout.margin_end = 6;
+        // TODO: align END when on right half of display
+        mini_layout.halign = Gtk.Align.END;
 
         int row = 0;
         mini_layout.attach (strawberry_button, 0, row++);
@@ -116,6 +120,26 @@ public class MiniWindow : Gtk.Window {
         }
 
         move (x, y);
+    }
+
+    public void fit_popover (int window_x, int window_y, int display_width, bool embiggen = true) {
+        if (embiggen) {
+            if (window_x < display_width / 2) {
+                mini_layout.halign = Gtk.Align.START;
+            } else {
+                mini_layout.halign = Gtk.Align.END;
+            }
+
+            width_request = 420;
+        } else {
+            width_request = -1;
+
+            // FIXME: Hack to get the move to happen after the width_request
+            Timeout.add (1, () => {
+                move (window_x, window_y);
+                return false;
+            });
+        }
     }
 }
 

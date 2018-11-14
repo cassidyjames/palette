@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2018 Cassidy James Blaede (https://cassidyjames.com)
+* Copyright © 2018 Cassidy James Blaede (https://cassidyjames.com)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -50,7 +50,7 @@ public class ColorButton : Gtk.MenuButton {
         color_context.add_class ("circular");
 
         var color_grid = new Gtk.Grid ();
-       color_grid.width_request = 32;
+        color_grid.width_request = 32;
 
         var color_menu = new Gtk.Popover (this);
         color_menu.add (color_grid);
@@ -98,9 +98,29 @@ public class ColorButton : Gtk.MenuButton {
         color_grid.show_all ();
         popover = color_menu;
 
-        Palette.settings.bind ("mini-mode", title, "visible", SettingsBindFlags.GET | SettingsBindFlags.INVERT_BOOLEAN);
-        Palette.settings.bind ("mini-mode", toggle, "visible", SettingsBindFlags.GET | SettingsBindFlags.INVERT_BOOLEAN);
-        Palette.settings.bind ("mini-mode", uses_label, "visible", SettingsBindFlags.GET | SettingsBindFlags.INVERT_BOOLEAN);
+        int root_x, root_y;
+        var screen = Gdk.Screen.get_default ();
+        var display = screen.get_display ();
+        var monitor = display.get_primary_monitor ();
+        var geometry = monitor.geometry;
+
+        color_menu.map.connect (() => {
+            Palette.mini_window.get_position (out root_x, out root_y);
+            Palette.mini_window.fit_popover (
+                root_x,
+                root_y,
+                geometry.width
+            );
+        });
+
+        color_menu.unmap.connect (() => {
+            Palette.mini_window.fit_popover (
+                root_x,
+                root_y,
+                geometry.width,
+                false
+            );
+        });
     }
 
     private void add_styles (string class_name, int variant, string bg_color) {

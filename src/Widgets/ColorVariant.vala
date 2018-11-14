@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2018 Cassidy James Blaede (https://cassidyjames.com)
+* Copyright © 2018 Cassidy James Blaede (https://cassidyjames.com)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -113,10 +113,6 @@ public class ColorVariant : Gtk.Button {
         Palette.settings.bind ("developer-mode", toggle, "active", SettingsBindFlags.DEFAULT);
         Palette.settings.bind ("developer-mode", const_label_revealer, "reveal-child", SettingsBindFlags.GET);
         Palette.settings.bind ("developer-mode", hex_label_revealer, "reveal-child", SettingsBindFlags.GET | SettingsBindFlags.INVERT_BOOLEAN);
-
-        Palette.settings.bind ("mini-mode", variant_label, "visible", SettingsBindFlags.GET | SettingsBindFlags.INVERT_BOOLEAN);
-        Palette.settings.bind ("mini-mode", const_label_revealer, "visible", SettingsBindFlags.GET | SettingsBindFlags.INVERT_BOOLEAN);
-        Palette.settings.bind ("mini-mode", hex_label_revealer, "visible", SettingsBindFlags.GET | SettingsBindFlags.INVERT_BOOLEAN);
     }
 }
 

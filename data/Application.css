@@ -19,35 +19,30 @@
 * Authored by: Cassidy James Blaede <c@ssidyjam.es>
 */
 
-button.circular,
-.button.circular {
-    color: transparent;
+button.circular {
+  color: transparent;
 }
 
-popover,
-.popover {
-    background: @theme_bg_color;
-    padding: 3px;
+popover {
+  background: @theme_bg_color;
+  padding: 3px;
 }
 
-popover button,
-.popover .button {
-	border: none;
-	border-radius: 0;
-	text-shadow: none;
-	box-shadow: none;
+popover button {
+  border: none;
+  border-radius: 0;
+  text-shadow: none;
+  box-shadow: none;
 }
 
-popover button:first-child,
-.popover .button:first-child {
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+popover button:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 
-popover button:last-child,
-.popover .button:last-child {
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
+popover button:last-child {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
 
 image {
@@ -56,15 +51,74 @@ image {
 
 .mini,
 .mini .titlebar {
-  background: rgba(255, 255, 255, 0.85);
-}
-
-.mini:backdrop,
-.mini:backdrop .titlebar {
-  background: rgba(255, 255, 255, 0.70);
+  background: alpha(@theme_bg_color, 0.85);
 }
 
 .mini .titlebar button {
-  color: #333;
+  color: @text_color;
+}
+
+.strawberry {
+  color: @STRAWBERRY_900;
+}
+
+.dark .strawberry {
+  color: @STRAWBERRY_100;
+}
+
+.orange {
+  color: @ORANGE_900;
+}
+
+.dark .orange {
+  color: @ORANGE_100;
+}
+
+.banana {
+  color: @BANANA_900;
+}
+
+.dark .banana {
+  color: @BANANA_100;
+}
+
+.lime {
+  color: @LIME_900;
+}
+
+.dark .lime {
+  color: @LIME_100;
+}
+
+.blueberry {
+  color: @BLUEBERRY_900;
+}
+
+.dark .blueberry {
+  color: @BLUEBERRY_100;
+}
+
+.grape {
+  color: @GRAPE_900;
+}
+
+.dark .grape {
+  color: @GRAPE_100;
+}
+
+.cocoa {
+  color: @COCOA_900;
+}
+
+.dark .cocoa {
+  color: @text_color;
+}
+
+.slate {
+  color: @SLATE_900;
+}
+
+.dark .slate {
+  color: @SLATE_100;
 }
 

@@ -20,6 +20,10 @@
 */
 
 public class Palette : Gtk.Application {
+    private const string DESKTOP_SCHEMA = "io.elementary.desktop";
+    private const string DARK_KEY = "prefer-dark";
+    private const string GTK_DARK = "gtk_application_prefer_dark_theme";
+
     public static GLib.Settings settings;
     public static MiniWindow mini_window;
     public static MainWindow main_window;
@@ -44,6 +48,24 @@ public class Palette : Gtk.Application {
 
     static construct {
         settings = new Settings ("com.github.cassidyjames.palette");
+
+        // Handle dark preference
+        var lookup = SettingsSchemaSource.get_default ().lookup (DESKTOP_SCHEMA, false);
+        if (lookup != null) {
+            var desktop_settings = new Settings (DESKTOP_SCHEMA);
+            var gtk_settings = Gtk.Settings.get_default ();
+            desktop_settings.bind (DARK_KEY, gtk_settings, GTK_DARK, SettingsBindFlags.DEFAULT);
+
+            desktop_settings.changed.connect (() => {
+                if (gtk_settings.gtk_application_prefer_dark_theme) {
+                    main_window.get_style_context ().add_class ("dark");
+                    mini_window.get_style_context ().add_class ("dark");
+                } else {
+                    main_window.get_style_context ().remove_class ("dark");
+                    mini_window.get_style_context ().remove_class ("dark");
+                }
+            });
+        }
     }
 
     protected override void activate () {

@@ -79,6 +79,11 @@ public class MainWindow : Gtk.Window {
         context.add_class ("rounded");
         context.add_class ("flat");
 
+        var gtk_settings = Gtk.Settings.get_default ();
+        if (gtk_settings.gtk_application_prefer_dark_theme) {
+            context.add_class ("dark");
+        }
+
         set_titlebar (header);
         add (main_layout);
 

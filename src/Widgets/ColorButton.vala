@@ -65,7 +65,7 @@ public class ColorButton : Gtk.MenuButton {
 
         var title_context = title.get_style_context ();
         title_context.add_class (Granite.STYLE_CLASS_H2_LABEL);
-        title_context.add_class ("fg-%s-%i".printf (color.style_class (), 900));
+        title_context.add_class ("%s".printf (color.style_class ()));
 
         var toggle = new Granite.ModeSwitch.from_icon_name ("preferences-color-symbolic", "applications-development-symbolic");
         toggle.primary_icon_tooltip_text = (_("Hex value"));
@@ -73,7 +73,7 @@ public class ColorButton : Gtk.MenuButton {
         toggle.margin_start = 6;
         toggle.margin_top = 6;
         toggle.valign = Gtk.Align.CENTER;
-        toggle.get_style_context ().add_class ("fg-%s-%i".printf (color.style_class (), 700));
+        toggle.get_style_context ().add_class ("%s".printf (color.style_class ()));
 
         var uses_label = new Gtk.Label (_("<b>Uses:</b> %s").printf (color.uses ()));
         uses_label.margin = 6;
@@ -81,7 +81,7 @@ public class ColorButton : Gtk.MenuButton {
         uses_label.use_markup = true;
         uses_label.wrap = true;
         uses_label.xalign = 0;
-        uses_label.get_style_context ().add_class ("fg-%s-%i".printf (color.style_class (), 900));
+        uses_label.get_style_context ().add_class ("%s".printf (color.style_class ()));
 
         int row = 1;
         foreach (unowned int variant in VARIANTS) {

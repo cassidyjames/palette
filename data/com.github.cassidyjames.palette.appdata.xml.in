@@ -16,6 +16,8 @@
     </ul>
     <p>Palette also sports a handy dock-like Mini Mode! Shrink the window down while keeping it always-on-top when you need to constantly reference colors, but don’t want it in your way. Mini Mode keeps all of the functionality with a more streamlined workflow.</p>
   </description>
+  <translation type="gettext">com.github.cassidyjames.palette</translation>
+  <launchable type="desktop-id">com.github.cassidyjames.palette.desktop</launchable>
   <provides>
     <binary>com.github.cassidyjames.palette</binary>
   </provides>

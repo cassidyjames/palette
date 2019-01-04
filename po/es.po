@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: com.github.cassidyjames.palette\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-06 23:58-0600\n"
-"PO-Revision-Date: 2018-09-09 02:03-0500\n"
+"PO-Revision-Date: 2019-01-04 11:05-0500\n"
 "Last-Translator: Alain M. <alain23@protonmail.com>\n"
 "Language-Team: none\n"
 "Language: es\n"
@@ -29,7 +29,6 @@ msgid "View and copy colors from the elementary brand palette"
 msgstr "Vea y copie la paleta de colores del proyecto elementary"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:10
-#, fuzzy
 msgid ""
 "elementary uses a set of bright and friendly colors. Easily access the "
 "entire official color palette on your local device, see examples of usage, "
@@ -41,19 +40,19 @@ msgstr ""
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:11
 msgid "Handy features:"
-msgstr ""
+msgstr "Características prácticas:"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:13
 msgid "Clean and straightforward design"
-msgstr ""
+msgstr "Diseño limpio y sencillo"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:14
 msgid "Click to copy any color to your clipboard"
-msgstr ""
+msgstr "Haz clic para copiar cualquier color a tu portapapeles."
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:15
 msgid "Supports both hex values and Gtk.CSS color constants"
-msgstr ""
+msgstr "Admite valores hexadecimales y constantes de color Gtk.CSS"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:144
 msgid "Cassidy James Blaede"
@@ -154,11 +153,11 @@ msgstr "oscuro neutro"
 
 #: src/Widgets/ColorButton.vala:70
 msgid "Hex value"
-msgstr ""
+msgstr "Valor hexadecimal"
 
 #: src/Widgets/ColorButton.vala:71
 msgid "Gtk.CSS color constant"
-msgstr ""
+msgstr "Constante de color Gtk.CSS"
 
 #: src/Widgets/ColorButton.vala:77
 #, c-format

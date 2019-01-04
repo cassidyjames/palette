@@ -28,3 +28,4 @@ tab_width = 1
 [debian/rules]
 indent_style = tab
 indent_size = tab
+

@@ -8,24 +8,25 @@ msgstr ""
 "Project-Id-Version: com.github.cassidyjames.palette\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-06 23:58-0600\n"
-"PO-Revision-Date: 2018-04-09 19:57-0600\n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2019-01-14 14:04+0100\n"
+"Last-Translator: Heimen Stoffels <vistausss@outlook.com>\n"
 "Language-Team: none\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.1.1\n"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:7
 #: data/launcher.desktop.in:3 src/MainWindow.vala:28
 msgid "Palette"
-msgstr ""
+msgstr "Palet"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:8
 #: data/launcher.desktop.in:5
 msgid "View and copy colors from the elementary brand palette"
-msgstr ""
+msgstr "Bekijk en kopieer kleuren uit Elementary's merkpalet"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:10
 msgid ""
@@ -33,133 +34,137 @@ msgid ""
 "entire official color palette on your local device, see examples of usage, "
 "and copy any variation of each color to paste into your own projects."
 msgstr ""
+"Elementary gebruikt een lichte, oogstrelende kleurenset. Krijg gemakkelijk "
+"toegang tot het gehele, officiële kleurpalet op je lokale apparaat, bekijk "
+"gebruiksvoorbeelden en kopieer elke variatie van welke kleur dan ook voor "
+"gebruik in je eigen projecten."
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:11
 msgid "Handy features:"
-msgstr ""
+msgstr "Handige functies:"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:13
 msgid "Clean and straightforward design"
-msgstr ""
+msgstr "Strak, duidelijk ontwerp"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:14
 msgid "Click to copy any color to your clipboard"
-msgstr ""
+msgstr "Klik om welke kleur dan ook te kopiëren naar je klembord"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:15
 msgid "Supports both hex values and Gtk.CSS color constants"
-msgstr ""
+msgstr "Ondersteuning voor hex-waarden en Gtk.CSS-kleuropmaak"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:144
 msgid "Cassidy James Blaede"
-msgstr ""
+msgstr "Cassidy James Blaede"
 
 #: data/launcher.desktop.in:4
 msgid "Color palette viewer"
-msgstr ""
+msgstr "Kleurpalet"
 
 #: data/launcher.desktop.in:8
 msgid "com.github.cassidyjames.palette"
-msgstr ""
+msgstr "com.github.cassidyjames.palette"
 
 #: data/launcher.desktop.in:12
 msgid "color;palette;scheme;copy;paste;swatch;contrast;🎨;"
-msgstr ""
+msgstr "kleur;palet;schema;kopiëren;plakken;swatch;contrast;🎨;"
 
 #: src/Colors.vala:37
 msgid "Strawberry"
-msgstr ""
+msgstr "Aardbei"
 
 #: src/Colors.vala:39
 msgid "Orange"
-msgstr ""
+msgstr "Sinaasappel"
 
 #: src/Colors.vala:41
 msgid "Banana"
-msgstr ""
+msgstr "Banaan"
 
 #: src/Colors.vala:43
 msgid "Lime"
-msgstr ""
+msgstr "Limoen"
 
 #: src/Colors.vala:45
 msgid "Blueberry"
-msgstr ""
+msgstr "Blauwe bes"
 
 #: src/Colors.vala:47
 msgid "Grape"
-msgstr ""
+msgstr "Druif"
 
 #: src/Colors.vala:49
 msgid "Cocoa"
-msgstr ""
+msgstr "Cacao"
 
 #: src/Colors.vala:51
 msgid "Silver"
-msgstr ""
+msgstr "Zilver"
 
 #: src/Colors.vala:53
 msgid "Slate"
-msgstr ""
+msgstr "Lei"
 
 #: src/Colors.vala:55
 msgid "Black"
-msgstr ""
+msgstr "Zwart"
 
 #: src/Colors.vala:64
 msgid "alert, stop, delete, error, recording, video"
-msgstr ""
+msgstr "alarm, stoppen, verwijderen, fout, opname, video"
 
 #: src/Colors.vala:66
 msgid "music, news, update, presentation"
-msgstr ""
+msgstr "muziek, nieuws, bijwerken, presentatie"
 
 #: src/Colors.vala:68
 msgid "caution, warning, mail, history, favorite"
-msgstr ""
+msgstr "opgelet, waarschuwing, e-mail, geschiedenis, favoriet"
 
 #: src/Colors.vala:70
 msgid "success, start, go, new, event, spreadsheet"
-msgstr ""
+msgstr "voltooid, starten, gaan, nieuw, evenement, werkblad"
 
 #: src/Colors.vala:72
 msgid "elementary, default accent, question, help, downloads, document"
-msgstr ""
+msgstr "elementary, standaardaccent, vraag, hulp, downloads, document"
 
 #: src/Colors.vala:74
 msgid "network, sharing, developer, appcenter, beta, vala, programming"
-msgstr ""
+msgstr "netwerk, delen, ontwikkelaar, appwinkel, bèta, vala, programmeren"
 
 #: src/Colors.vala:76
 msgid "warm neutral, earth tone, brown"
-msgstr ""
+msgstr "neutraal warm, aarde, bruin"
 
 #: src/Colors.vala:78
 msgid "system, neutral light"
-msgstr ""
+msgstr "systeem, neutraal licht"
 
 #: src/Colors.vala:80
 msgid "cool neutral, default"
-msgstr ""
+msgstr "neutraal koel, standaard"
 
 #: src/Colors.vala:82
 msgid "neutral dark"
-msgstr ""
+msgstr "neutraal donker"
 
 #: src/Widgets/ColorButton.vala:70
 msgid "Hex value"
-msgstr ""
+msgstr "Hex-waarde"
 
 #: src/Widgets/ColorButton.vala:71
 msgid "Gtk.CSS color constant"
-msgstr ""
+msgstr "Gtk.CSS-kleuropmaak"
 
 #: src/Widgets/ColorButton.vala:77
 #, c-format
 msgid "<b>Uses:</b> %s"
-msgstr ""
+msgstr "<b>Gebruik:</b> %s"
 
 #: src/Widgets/ColorVariant.vala:51 src/Widgets/ColorVariant.vala:99
 #, c-format
 msgid "Copy %s to clipboard"
-msgstr ""
+msgstr "%s kopiëren naar klembord"

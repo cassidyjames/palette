@@ -21,7 +21,12 @@
   <provides>
     <binary>com.github.cassidyjames.palette</binary>
   </provides>
-  <releases>
+  <releases> 
+    <release version="3.1.5" date="2019-01-15">
+      <description>
+        <p>Bonjour encore! Updated French translations thanks to @NathanBnm.</p>
+      </description>
+    </release>
     <release version="3.1.4" date="2019-01-14">
       <description>
         <p>Hallo! Dutch translations thanks to Heimen Stoffels.</p>

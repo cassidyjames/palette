@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.cassidyjames.palette\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-06 23:58-0600\n"
+"POT-Creation-Date: 2019-01-22 23:36-0700\n"
 "PO-Revision-Date: 2019-01-15 22:37+0100\n"
 "Last-Translator: NathanBnm\n"
 "Language-Team: French\n"
@@ -25,7 +25,8 @@ msgstr "Palette"
 #: data/com.github.cassidyjames.palette.appdata.xml.in:8
 #: data/launcher.desktop.in:5
 msgid "View and copy colors from the elementary brand palette"
-msgstr "Visualisez et copiez les couleurs de la palette de couleurs d'elementary"
+msgstr ""
+"Visualisez et copiez les couleurs de la palette de couleurs d'elementary"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:10
 #, fuzzy
@@ -52,9 +53,18 @@ msgstr "Cliquez pour copier n'importe quelle couleur dans votre presse-papiers"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:15
 msgid "Supports both hex values and Gtk.CSS color constants"
-msgstr "Supporte les valeurs hexadécimales et les constantes de couleur Gtk.CSS"
+msgstr ""
+"Supporte les valeurs hexadécimales et les constantes de couleur Gtk.CSS"
 
-#: data/com.github.cassidyjames.palette.appdata.xml.in:144
+#: data/com.github.cassidyjames.palette.appdata.xml.in:17
+msgid ""
+"Palette also sports a handy dock-like Mini Mode! Shrink the window down "
+"while keeping it always-on-top when you need to constantly reference colors, "
+"but don’t want it in your way. Mini Mode keeps all of the functionality with "
+"a more streamlined workflow."
+msgstr ""
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:177
 msgid "Cassidy James Blaede"
 msgstr "Cassidy James Blaede"
 
@@ -129,11 +139,15 @@ msgstr "Succès, Démarrer, Nouveau, Événement, Classeur"
 
 #: src/Colors.vala:72
 msgid "elementary, default accent, question, help, downloads, document"
-msgstr "elementary, Accentuation par défaut, Question, Aide, Téléchargements, Document"
+msgstr ""
+"elementary, Accentuation par défaut, Question, Aide, Téléchargements, "
+"Document"
 
 #: src/Colors.vala:74
 msgid "network, sharing, developer, appcenter, beta, vala, programming"
-msgstr "Réseau, Partage, Développeur, Centre d'Applications, Bêta, Vala, Programmation"
+msgstr ""
+"Réseau, Partage, Développeur, Centre d'Applications, Bêta, Vala, "
+"Programmation"
 
 #: src/Colors.vala:76
 msgid "warm neutral, earth tone, brown"
@@ -151,20 +165,24 @@ msgstr "Neutre, Défaut"
 msgid "neutral dark"
 msgstr "Noir uni"
 
-#: src/Widgets/ColorButton.vala:70
+#: src/MainWindow.vala:34
+msgid "Mini mode"
+msgstr ""
+
+#: src/Widgets/ColorButton.vala:71
 msgid "Hex value"
 msgstr "Valeur Hex"
 
-#: src/Widgets/ColorButton.vala:71
+#: src/Widgets/ColorButton.vala:72
 msgid "Gtk.CSS color constant"
 msgstr "Constante de couleur Gtk.CSS"
 
-#: src/Widgets/ColorButton.vala:77
+#: src/Widgets/ColorButton.vala:78
 #, c-format
 msgid "<b>Uses:</b> %s"
 msgstr "<b>Utilisations :</b> %s"
 
-#: src/Widgets/ColorVariant.vala:51 src/Widgets/ColorVariant.vala:99
+#: src/Widgets/ColorVariant.vala:53 src/Widgets/ColorVariant.vala:101
 #, c-format
 msgid "Copy %s to clipboard"
 msgstr "Copier %s sur le presse-papiers"

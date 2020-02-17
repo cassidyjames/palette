@@ -1,32 +1,30 @@
-# Polish translations for com.github.cassidyjames.palette package.
-# Copyright (C) 2018 THE com.github.cassidyjames.palette'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the com.github.cassidyjames.palette package.
-# Automatically generated, 2018.
+# Polish translations for Palette.
+# This file is distributed under the same license as the com.github.cassidyjames.palette.
+# Translated by Michał Nowakowski <nowakowski@offshore.rocks>, 2019. 
 #
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.cassidyjames.palette\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-22 23:36-0700\n"
-"PO-Revision-Date: 2018-04-09 19:57-0600\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2019-12-13 17:08+0100\n"
+"Last-Translator: Michał Nowakowski <nowakowski@offshore.rocks>\n"
+"Language-Team:\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2);\n"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:7
 #: data/launcher.desktop.in:3 src/MainWindow.vala:28
 msgid "Palette"
-msgstr ""
+msgstr "Palette"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:8
 #: data/launcher.desktop.in:5
 msgid "View and copy colors from the elementary brand palette"
-msgstr ""
+msgstr "Oglądaj i kopiuj kolory z palety marki elementary"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:10
 msgid ""
@@ -34,22 +32,25 @@ msgid ""
 "entire official color palette on your local device, see examples of usage, "
 "and copy any variation of each color to paste into your own projects."
 msgstr ""
+"elementary używa zestawu jasnych i przyjaznych kolorów. Uzyskaj dostęp do"
+"oficjalnej palety kolorów na urządzeniu lokalnym, zobacz przykłady użycia i "
+"skopiuj dowolny wariant każdego z kolorów, aby wkleić go do własnych projektów."
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:11
 msgid "Handy features:"
-msgstr ""
+msgstr "Wygodne funkcje:"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:13
 msgid "Clean and straightforward design"
-msgstr ""
+msgstr "Prosty i przejrzysty interfejs"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:14
 msgid "Click to copy any color to your clipboard"
-msgstr ""
+msgstr "Kliknij, żeby skopiować kolor do schowka"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:15
 msgid "Supports both hex values and Gtk.CSS color constants"
-msgstr ""
+msgstr "Wspiera zarówno wartości hex, jak i stałe koloru Gtk.CSS"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:17
 msgid ""
@@ -58,121 +59,126 @@ msgid ""
 "but don’t want it in your way. Mini Mode keeps all of the functionality with "
 "a more streamlined workflow."
 msgstr ""
+"Palette posiada również wygodny tryb-mini à la dok! Zmniejsz okienko "
+"i trzymaj je zawsze na wierzchu, żeby móc ciągle sprawdzać kolory, bez "
+"tracenia przestrzeni na pulpicie. Tryb-mini zachowuje pełną funkcjonalność, "
+"oferując płynniejszą pracę."
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:177
 msgid "Cassidy James Blaede"
-msgstr ""
+msgstr "Cassidy James Blaede"
 
 #: data/launcher.desktop.in:4
 msgid "Color palette viewer"
-msgstr ""
+msgstr "Przeglądarka palety kolorów"
 
 #: data/launcher.desktop.in:8
 msgid "com.github.cassidyjames.palette"
-msgstr ""
+msgstr "com.github.cassidyjames.palette"
 
 #: data/launcher.desktop.in:12
 msgid "color;palette;scheme;copy;paste;swatch;contrast;🎨;"
-msgstr ""
+msgstr "kolor;paleta;układ kolorystyczny;kopiowanie;wklejanie;próbka materiału;kontrast;🎨;"
 
 #: src/Colors.vala:37
 msgid "Strawberry"
-msgstr ""
+msgstr "Truskawkowy"
 
 #: src/Colors.vala:39
 msgid "Orange"
-msgstr ""
+msgstr "Pomarańczowy"
 
 #: src/Colors.vala:41
 msgid "Banana"
-msgstr ""
+msgstr "Bananowy"
 
 #: src/Colors.vala:43
 msgid "Lime"
-msgstr ""
+msgstr "Limonkowy"
 
 #: src/Colors.vala:45
 msgid "Blueberry"
-msgstr ""
+msgstr "Jagodowy"
 
 #: src/Colors.vala:47
 msgid "Grape"
-msgstr ""
+msgstr "Winogronowy"
 
 #: src/Colors.vala:49
 msgid "Cocoa"
-msgstr ""
+msgstr "Kakaowy"
 
 #: src/Colors.vala:51
 msgid "Silver"
-msgstr ""
+msgstr "Srebrny"
 
 #: src/Colors.vala:53
 msgid "Slate"
-msgstr ""
+msgstr "Szaroniebieski"
 
 #: src/Colors.vala:55
 msgid "Black"
-msgstr ""
+msgstr "Czarny"
 
 #: src/Colors.vala:64
 msgid "alert, stop, delete, error, recording, video"
-msgstr ""
+msgstr "alert, zatrzymanie, usuwanie, błąd, nagrywanie, wideo"
 
 #: src/Colors.vala:66
 msgid "music, news, update, presentation"
-msgstr ""
+msgstr "muzyka, newsy, aktualizacja, prezentacja"
 
 #: src/Colors.vala:68
 msgid "caution, warning, mail, history, favorite"
-msgstr ""
+msgstr "ostrożność, ostrzeżenie, poczta, historia, ulubione"
 
 #: src/Colors.vala:70
 msgid "success, start, go, new, event, spreadsheet"
-msgstr ""
+msgstr "sukces, początek, działanie, nowe, wydarzenie, arkusz kalkulacyjny"
 
 #: src/Colors.vala:72
 msgid "elementary, default accent, question, help, downloads, document"
-msgstr ""
+msgstr "elementary, domyślny akcent, pytanie, pomoc, pobieranie, dokument"
 
 #: src/Colors.vala:74
 msgid "network, sharing, developer, appcenter, beta, vala, programming"
-msgstr ""
+msgstr "sieć, współdzielenie, deweloper, appcenter, beta, vala, programowanie"
 
 #: src/Colors.vala:76
 msgid "warm neutral, earth tone, brown"
-msgstr ""
+msgstr "ciepła neutralność, kolory ziemii, brąz"
 
 #: src/Colors.vala:78
 msgid "system, neutral light"
-msgstr ""
+msgstr "system, neutralna jasność"
 
 #: src/Colors.vala:80
 msgid "cool neutral, default"
-msgstr ""
+msgstr "neutralny chłód, domyślne"
 
 #: src/Colors.vala:82
 msgid "neutral dark"
-msgstr ""
+msgstr "neutralna ciemność"
 
 #: src/MainWindow.vala:34
 msgid "Mini mode"
-msgstr ""
+msgstr "Tryb Mini"
 
 #: src/Widgets/ColorButton.vala:71
 msgid "Hex value"
-msgstr ""
+msgstr "Wartość Hex"
 
 #: src/Widgets/ColorButton.vala:72
 msgid "Gtk.CSS color constant"
-msgstr ""
+msgstr "Stała koloru Gtk.CSS"
 
 #: src/Widgets/ColorButton.vala:78
 #, c-format
 msgid "<b>Uses:</b> %s"
-msgstr ""
+msgstr "<b>Zastosowanie:</b> %s"
 
 #: src/Widgets/ColorVariant.vala:53 src/Widgets/ColorVariant.vala:101
 #, c-format
 msgid "Copy %s to clipboard"
-msgstr ""
+msgstr "Skopiuj %s do schowka"
+

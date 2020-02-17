@@ -1,3 +1,22 @@
+com.github.cassidyjames.palette (3.1.6) precise; urgency=medium
+
+  * Release 3.1.6 (#45)
+  * Update translation template
+  * Remove debian packaging from in-tree
+  * Create compress-images.yml
+  * Create gettext.yml
+  * Create lint.yml
+  * Create release.yml
+  * Add files via upload (#44)
+  * Update .travis.yml
+  * Downgrade Node.js to fix builds on Travis CI (#42)
+  * Added italian translation (#40)
+  * Prefer dark (#38)
+  * Use real colors again for AppCenter website
+  * Update translation files
+
+ -- Cassidy James Blaede <c@ssidyjam.es>  Mon, 17 Feb 2020 21:47:54 +0000
+
 com.github.cassidyjames.palette (1.0.1) precise; urgency=low
 
   * Initial Release.

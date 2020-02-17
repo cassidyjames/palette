@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2018 Cassidy James Blaede <c@ssidyjam.es> -->
+<!-- Copyright 2018–2020 Cassidy James Blaede <c@ssidyjam.es> -->
 <component type="desktop">
   <id>com.github.cassidyjames.palette</id>
   <metadata_license>CC0</metadata_license>
@@ -22,6 +22,15 @@
     <binary>com.github.cassidyjames.palette</binary>
   </provides>
   <releases>
+    <release version="3.1.6" date="2020-02-17">
+      <description>
+        <p>Translation updates</p>
+        <ul>
+          <li>Italian translations thanks to Mirko Brombin</li>
+          <li>Polish translations thanks to Michał Nowakowski</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.1.5" date="2019-01-15">
       <description>
         <p>Bonjour encore! Updated French translations thanks to @NathanBnm.</p>
@@ -187,4 +196,3 @@
     <value key="x-appcenter-suggested-price">6</value>
   </custom>
 </component>
-

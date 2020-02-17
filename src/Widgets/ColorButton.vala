@@ -1,5 +1,5 @@
 /*
-* Copyright © 2018 Cassidy James Blaede (https://cassidyjames.com)
+* Copyright © 2018–2020 Cassidy James Blaede (https://cassidyjames.com)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -67,7 +67,10 @@ public class ColorButton : Gtk.MenuButton {
         title_context.add_class (Granite.STYLE_CLASS_H2_LABEL);
         title_context.add_class ("%s".printf (color.style_class ()));
 
-        var toggle = new Granite.ModeSwitch.from_icon_name ("preferences-color-symbolic", "applications-development-symbolic");
+        var toggle = new Granite.ModeSwitch.from_icon_name (
+            "preferences-color-symbolic",
+            "applications-development-symbolic"
+        );
         toggle.primary_icon_tooltip_text = (_("Hex value"));
         toggle.secondary_icon_tooltip_text = (_("Gtk.CSS color constant"));
         toggle.margin_start = 6;
@@ -168,7 +171,11 @@ public class ColorButton : Gtk.MenuButton {
             );
             provider.load_from_data (colored_css, colored_css.length);
 
-            Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+            Gtk.StyleContext.add_provider_for_screen (
+                Gdk.Screen.get_default (),
+                provider,
+                Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
+            );
         } catch (GLib.Error e) {
             return;
         }
@@ -201,4 +208,3 @@ public class ColorButton : Gtk.MenuButton {
         return Math.pow ((color + 0.055) / 1.055, 2.4);
     }
 }
-

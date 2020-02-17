@@ -1,4 +1,8 @@
-project('com.github.cassidyjames.palette', 'vala', 'c')
+project(
+    'com.github.cassidyjames.palette',
+    'vala', 'c',
+    version: '3.1.6'
+)
 
 gnome = import('gnome')
 i18n = import('i18n')
@@ -34,4 +38,3 @@ subdir('data')
 subdir('po')
 
 meson.add_install_script('meson/post_install.py')
-

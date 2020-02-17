@@ -22,6 +22,11 @@
     <binary>com.github.cassidyjames.palette</binary>
   </provides>
   <releases>
+    <release version="3.1.7" date="2020-02-17">
+      <description>
+        <p>Fix .desktop translation error</p>
+      </description>
+    </release>
     <release version="3.1.6" date="2020-02-17">
       <description>
         <p>Translation updates</p>

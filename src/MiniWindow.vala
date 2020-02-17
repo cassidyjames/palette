@@ -1,5 +1,5 @@
 /*
-* Copyright © 2018 Cassidy James Blaede (https://cassidyjames.com)
+* Copyright © 2018–2020 Cassidy James Blaede (https://cassidyjames.com)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -73,15 +73,15 @@ public class MiniWindow : Gtk.Window {
 
         int row = 0;
         mini_layout.attach (strawberry_button, 0, row++);
-        mini_layout.attach (orange_button,     0, row++);
-        mini_layout.attach (banana_button,     0, row++);
-        mini_layout.attach (lime_button,       0, row++);
-        mini_layout.attach (blueberry_button,  0, row++);
-        mini_layout.attach (grape_button,      0, row++);
-        mini_layout.attach (cocoa_button,      0, row++);
-        mini_layout.attach (silver_button,     0, row++);
-        mini_layout.attach (slate_button,      0, row++);
-        mini_layout.attach (black_button,      0, row++);
+        mini_layout.attach (orange_button, 0, row++);
+        mini_layout.attach (banana_button, 0, row++);
+        mini_layout.attach (lime_button, 0, row++);
+        mini_layout.attach (blueberry_button, 0, row++);
+        mini_layout.attach (grape_button, 0, row++);
+        mini_layout.attach (cocoa_button, 0, row++);
+        mini_layout.attach (silver_button, 0, row++);
+        mini_layout.attach (slate_button, 0, row++);
+        mini_layout.attach (black_button, 0, row++);
 
         var context = get_style_context ();
         context.add_class ("palette");
@@ -155,4 +155,3 @@ public class MiniWindow : Gtk.Window {
         }
     }
 }
-

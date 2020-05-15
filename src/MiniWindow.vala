@@ -58,8 +58,10 @@ public class MiniWindow : Gtk.Window {
         var orange_button = new ColorButton (Color.ORANGE, 32);
         var banana_button = new ColorButton (Color.BANANA, 32);
         var lime_button = new ColorButton (Color.LIME, 32);
+        var mint_button = new ColorButton (Color.MINT, 32);
         var blueberry_button = new ColorButton (Color.BLUEBERRY, 32);
         var grape_button = new ColorButton (Color.GRAPE, 32);
+        var bubblegum_button = new ColorButton (Color.BUBBLEGUM, 32);
         var cocoa_button = new ColorButton (Color.COCOA, 32);
         var silver_button = new ColorButton (Color.SILVER, 32);
         var slate_button = new ColorButton (Color.SLATE, 32);
@@ -76,8 +78,10 @@ public class MiniWindow : Gtk.Window {
         mini_layout.attach (orange_button, 0, row++);
         mini_layout.attach (banana_button, 0, row++);
         mini_layout.attach (lime_button, 0, row++);
+        mini_layout.attach (mint_button, 0, row++);
         mini_layout.attach (blueberry_button, 0, row++);
         mini_layout.attach (grape_button, 0, row++);
+        mini_layout.attach (bubblegum_button, 0, row++);
         mini_layout.attach (cocoa_button, 0, row++);
         mini_layout.attach (silver_button, 0, row++);
         mini_layout.attach (slate_button, 0, row++);

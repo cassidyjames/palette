@@ -24,8 +24,10 @@ public enum Color {
     ORANGE,
     BANANA,
     LIME,
+    MINT,
     BLUEBERRY,
     GRAPE,
+    BUBBLEGUM,
     COCOA,
     SILVER,
     SLATE,
@@ -41,10 +43,14 @@ public enum Color {
                 return _("Banana");
             case LIME:
                 return _("Lime");
+            case MINT:
+                return _("Mint");
             case BLUEBERRY:
                 return _("Blueberry");
             case GRAPE:
                 return _("Grape");
+            case BUBBLEGUM:
+                return _("Bubblegum");
             case COCOA:
                 return _("Cocoa");
             case SILVER:
@@ -68,10 +74,14 @@ public enum Color {
                 return _("caution, warning, mail, history, favorite");
             case LIME:
                 return _("success, start, go, new, event, spreadsheet");
+            case MINT:
+                return _("vector path intersections, calming");
             case BLUEBERRY:
                 return _("elementary, default accent, question, help, downloads, document");
             case GRAPE:
                 return _("network, sharing, developer, appcenter, beta, vala, programming");
+            case BUBBLEGUM:
+                return _("eraser, playful");
             case COCOA:
                 return _("warm neutral, earth tone, brown");
             case SILVER:
@@ -93,12 +103,16 @@ public enum Color {
                 return "orange";
             case BANANA:
                 return "banana";
+            case MINT:
+                return "mint";
             case LIME:
                 return "lime";
             case BLUEBERRY:
                 return "blueberry";
             case GRAPE:
                 return "grape";
+            case BUBBLEGUM:
+                return "bubblegum";
             case COCOA:
                 return "cocoa";
             case SILVER:
@@ -144,6 +158,13 @@ public enum Color {
                 hex.set (700, "#3a9104");
                 hex.set (900, "#206b00");
                 break;
+            case MINT:
+                hex.set (100, "#89ffdd");
+                hex.set (300, "#43d6b5");
+                hex.set (500, "#28bca3");
+                hex.set (700, "#0e9a83");
+                hex.set (900, "#007367");
+                break;
             case BLUEBERRY:
                 hex.set (100, "#8cd5ff");
                 hex.set (300, "#64baff");
@@ -157,6 +178,13 @@ public enum Color {
                 hex.set (500, "#a56de2");
                 hex.set (700, "#7239b3");
                 hex.set (900, "#452981");
+                break;
+            case BUBBLEGUM:
+                hex.set (100, "#fe9ab8");
+                hex.set (300, "#f4679d");
+                hex.set (500, "#de3e80");
+                hex.set (700, "#bc245d");
+                hex.set (900, "#910e38");
                 break;
             case COCOA:
                 hex.set (100, "#a3907c");

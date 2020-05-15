@@ -1,3 +1,10 @@
+com.github.cassidyjames.palette (3.2.0) precise; urgency=medium
+
+  * Add Mint and Bubblegum (#49)
+  * Update translation template
+
+ -- Cassidy James Blaede <c@ssidyjam.es>  Fri, 15 May 2020 19:22:45 +0000
+
 com.github.cassidyjames.palette (3.1.7) precise; urgency=medium
 
   * Release 3.1.7 (#46)

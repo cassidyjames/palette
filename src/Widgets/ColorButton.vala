@@ -36,7 +36,7 @@ public class ColorButton : Gtk.MenuButton {
 
     public Color color { get; construct; }
 
-    public ColorButton (Color color, int size = 128) {
+    public ColorButton (Color color, int size = 96) {
         Object (
             height_request: size,
             width_request: size,

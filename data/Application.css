@@ -90,6 +90,14 @@ image {
   color: @LIME_100;
 }
 
+.mint {
+  color: @MINT_900;
+}
+
+.dark .mint {
+  color: @MINT_100;
+}
+
 .blueberry {
   color: @BLUEBERRY_900;
 }
@@ -104,6 +112,14 @@ image {
 
 .dark .grape {
   color: @GRAPE_100;
+}
+
+.bubblegum {
+  color: @BUBBLEGUM_900;
+}
+
+.dark .bubblegum {
+  color: @BUBBLEGUM_100;
 }
 
 .cocoa {

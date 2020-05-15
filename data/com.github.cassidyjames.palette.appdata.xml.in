@@ -22,6 +22,16 @@
     <binary>com.github.cassidyjames.palette</binary>
   </provides>
   <releases>
+    <release version="4.0.0" date="2020-05-15">
+      <description>
+        <p>Minty Bubblegum?</p>
+        <ul>
+          <li>New Mint palette color for vector path intersections</li>
+          <li>New Bubblegum palette color for erasers</li>
+          <li>Tweaked layout to better fit all the colors</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.1.7" date="2020-02-17">
       <description>
         <p>Fix .desktop translation error</p>
@@ -147,16 +157,19 @@
   </releases>
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/cassidyjames/palette/master/data/screenshots/screenshot.png</image>
+      <image>https://raw.githubusercontent.com/cassidyjames/palette/master/data/screenshots/default@2x.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/cassidyjames/palette/master/data/screenshots/screenshot-strawberry-hex.png</image>
+      <image>https://raw.githubusercontent.com/cassidyjames/palette/master/data/screenshots/strawberry-hex@2x.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/cassidyjames/palette/master/data/screenshots/screenshot-grape-const.png</image>
+      <image>https://raw.githubusercontent.com/cassidyjames/palette/master/data/screenshots/grape-const@2x.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/cassidyjames/palette/master/data/screenshots/screenshot-mini.png</image>
+      <image>https://raw.githubusercontent.com/cassidyjames/palette/master/data/screenshots/mini@2x.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/cassidyjames/palette/master/data/screenshots/mini-desktop@2x.png</image>
     </screenshot>
   </screenshots>
   <content_rating type="oars-1.1">

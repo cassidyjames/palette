@@ -51,8 +51,10 @@ public class MainWindow : Gtk.Window {
         var orange_button = new ColorButton (Color.ORANGE);
         var banana_button = new ColorButton (Color.BANANA);
         var lime_button = new ColorButton (Color.LIME);
+        var mint_button = new ColorButton (Color.MINT);
         var blueberry_button = new ColorButton (Color.BLUEBERRY);
         var grape_button = new ColorButton (Color.GRAPE);
+        var bubblegum_button = new ColorButton (Color.BUBBLEGUM);
         var cocoa_button = new ColorButton (Color.COCOA);
         var silver_button = new ColorButton (Color.SILVER);
         var slate_button = new ColorButton (Color.SLATE);
@@ -66,13 +68,16 @@ public class MainWindow : Gtk.Window {
         main_layout.attach (orange_button, 1, 0);
         main_layout.attach (banana_button, 2, 0);
         main_layout.attach (lime_button, 3, 0);
-        main_layout.attach (blueberry_button, 4, 0);
-        main_layout.attach (grape_button, 5, 0);
 
-        main_layout.attach (cocoa_button, 0, 1);
-        main_layout.attach (silver_button, 1, 1);
-        main_layout.attach (slate_button, 2, 1);
-        main_layout.attach (black_button, 3, 1);
+        main_layout.attach (mint_button, 0, 1);
+        main_layout.attach (blueberry_button, 1, 1);
+        main_layout.attach (grape_button, 2, 1);
+        main_layout.attach (bubblegum_button, 3, 1);
+
+        main_layout.attach (cocoa_button, 0, 2);
+        main_layout.attach (silver_button, 1, 2);
+        main_layout.attach (slate_button, 2, 2);
+        main_layout.attach (black_button, 3, 2);
 
         var context = get_style_context ();
         context.add_class ("palette");

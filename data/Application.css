@@ -19,6 +19,18 @@
 * Authored by: Cassidy James Blaede <c@ssidyjam.es>
 */
 
+/* Definitiions needed until/unless the palette is backported */
+@define-color MINT_100 #89ffdd;
+@define-color MINT_300 #43d6b5;
+@define-color MINT_500 #28bca3;
+@define-color MINT_700 #0e9a83;
+@define-color MINT_900 #007367;
+@define-color BUBBLEGUM_100 #fe9ab8;
+@define-color BUBBLEGUM_300 #f4679d;
+@define-color BUBBLEGUM_500 #de3e80;
+@define-color BUBBLEGUM_700 #bc245d;
+@define-color BUBBLEGUM_900 #910e38;
+
 button.circular {
   color: transparent;
 }

@@ -1,31 +1,33 @@
 # Turkish translations for com.github.cassidyjames.palette package.
 # Copyright (C) 2018 THE com.github.cassidyjames.palette'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the com.github.cassidyjames.palette package.
-# Automatically generated, 2018.
 #
+# Automatically generated, 2018.
+# Safak <bjksafak45@gmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.cassidyjames.palette\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-22 23:36-0700\n"
-"PO-Revision-Date: 2018-04-09 19:57-0600\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-09-25 08:36+0300\n"
+"Last-Translator: Safak <bjksafak45@gmail.com>\n"
+"Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 2.0\n"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:7
 #: data/launcher.desktop.in:3 src/MainWindow.vala:28
 msgid "Palette"
-msgstr ""
+msgstr "Palette"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:8
 #: data/launcher.desktop.in:5
 msgid "View and copy colors from the elementary brand palette"
-msgstr ""
+msgstr "Temel marka paletinden renkleri görüntüleyin ve kopyalayın"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:10
 msgid ""
@@ -33,22 +35,26 @@ msgid ""
 "entire official color palette on your local device, see examples of usage, "
 "and copy any variation of each color to paste into your own projects."
 msgstr ""
+"elementary, bir dizi parlak ve samimi renk kullanır. Kolayca erişin"
+"yerel cihazınızdaki resmi renk paletinin tamamı, kullanım örneklerine bakın,"
+"ve her rengin herhangi bir varyasyonunu kendi projelerinize yapıştırmak için"
+" kopyalayın."
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:11
 msgid "Handy features:"
-msgstr ""
+msgstr "Kullanışlı özellikler:"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:13
 msgid "Clean and straightforward design"
-msgstr ""
+msgstr "Temiz ve anlaşılır tasarım"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:14
 msgid "Click to copy any color to your clipboard"
-msgstr ""
+msgstr "Panonuza herhangi bir rengi kopyalamak için tıklayın"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:15
 msgid "Supports both hex values and Gtk.CSS color constants"
-msgstr ""
+msgstr "Hem onaltılık değerleri hem de Gtk.CSS renk sabitlerini destekler"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:17
 msgid ""
@@ -57,121 +63,125 @@ msgid ""
 "but don’t want it in your way. Mini Mode keeps all of the functionality with "
 "a more streamlined workflow."
 msgstr ""
+"Palette ayrıca dock benzeri bir Mini Modu da içerir! Pencereyi küçült"
+"renklere sürekli başvurmanız gerektiğinde her zaman en üstte tutarken,"
+"ama senin yolunda istemiyorum. Mini Mod, tüm işlevselliği"
+"daha akıcı bir iş akışı."
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:177
 msgid "Cassidy James Blaede"
-msgstr ""
+msgstr "Cassidy James Blaede"
 
 #: data/launcher.desktop.in:4
 msgid "Color palette viewer"
-msgstr ""
+msgstr "Renk paleti görüntüleyici"
 
 #: data/launcher.desktop.in:8
 msgid "com.github.cassidyjames.palette"
-msgstr ""
+msgstr "com.github.cassidyjames.palette"
 
 #: data/launcher.desktop.in:12
 msgid "color;palette;scheme;copy;paste;swatch;contrast;🎨;"
-msgstr ""
+msgstr "renk; palet; düzen; kopyala; yapıştır; renk örneği; kontrast; 🎨;"
 
 #: src/Colors.vala:37
 msgid "Strawberry"
-msgstr ""
+msgstr "Çilek"
 
 #: src/Colors.vala:39
 msgid "Orange"
-msgstr ""
+msgstr "Turuncu"
 
 #: src/Colors.vala:41
 msgid "Banana"
-msgstr ""
+msgstr "Muz"
 
 #: src/Colors.vala:43
 msgid "Lime"
-msgstr ""
+msgstr "Limon"
 
 #: src/Colors.vala:45
 msgid "Blueberry"
-msgstr ""
+msgstr "Yabanmersini"
 
 #: src/Colors.vala:47
 msgid "Grape"
-msgstr ""
+msgstr "Üzüm"
 
 #: src/Colors.vala:49
 msgid "Cocoa"
-msgstr ""
+msgstr "Kakao"
 
 #: src/Colors.vala:51
 msgid "Silver"
-msgstr ""
+msgstr "Gümüş"
 
 #: src/Colors.vala:53
 msgid "Slate"
-msgstr ""
+msgstr "Barut"
 
 #: src/Colors.vala:55
 msgid "Black"
-msgstr ""
+msgstr "Siyah"
 
 #: src/Colors.vala:64
 msgid "alert, stop, delete, error, recording, video"
-msgstr ""
+msgstr "uyarı, durdurma, silme, hata, kayıt, video"
 
 #: src/Colors.vala:66
 msgid "music, news, update, presentation"
-msgstr ""
+msgstr "müzik, haber, güncelleme, sunum"
 
 #: src/Colors.vala:68
 msgid "caution, warning, mail, history, favorite"
-msgstr ""
+msgstr "dikkat, uyarı, posta, geçmiş, favori"
 
 #: src/Colors.vala:70
 msgid "success, start, go, new, event, spreadsheet"
-msgstr ""
+msgstr "başarı, başla, git, yeni, etkinlik, e-tablo"
 
 #: src/Colors.vala:72
 msgid "elementary, default accent, question, help, downloads, document"
-msgstr ""
+msgstr "elemantry, varsayılan aksan, soru, yardım, indirmeler, belge"
 
 #: src/Colors.vala:74
 msgid "network, sharing, developer, appcenter, beta, vala, programming"
-msgstr ""
+msgstr "ağ, paylaşım, geliştirici, uygulama merkezi, beta, vala, programlama"
 
 #: src/Colors.vala:76
 msgid "warm neutral, earth tone, brown"
-msgstr ""
+msgstr "sıcak nötr, toprak tonu, kahverengi"
 
 #: src/Colors.vala:78
 msgid "system, neutral light"
-msgstr ""
+msgstr "sistem, nötr ışık"
 
 #: src/Colors.vala:80
 msgid "cool neutral, default"
-msgstr ""
+msgstr "soğuk nötr, varsayılan"
 
 #: src/Colors.vala:82
 msgid "neutral dark"
-msgstr ""
+msgstr "nötr karanlık"
 
 #: src/MainWindow.vala:34
 msgid "Mini mode"
-msgstr ""
+msgstr "Mini mod"
 
 #: src/Widgets/ColorButton.vala:71
 msgid "Hex value"
-msgstr ""
+msgstr "Hex değeri"
 
 #: src/Widgets/ColorButton.vala:72
 msgid "Gtk.CSS color constant"
-msgstr ""
+msgstr "Gtk.CSS renk sabiti"
 
 #: src/Widgets/ColorButton.vala:78
 #, c-format
 msgid "<b>Uses:</b> %s"
-msgstr ""
+msgstr "<b>Kullanım Alanları:</b> %s"
 
 #: src/Widgets/ColorVariant.vala:53 src/Widgets/ColorVariant.vala:101
 #, c-format
 msgid "Copy %s to clipboard"
-msgstr ""
+msgstr "%s dosyasını panoya kopyala"

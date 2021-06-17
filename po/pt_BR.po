@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.cassidyjames.palette\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-22 23:36-0700\n"
-"PO-Revision-Date: 2018-04-09 19:57-0600\n"
+"POT-Creation-Date: 2020-05-16 23:41+0000\n"
+"PO-Revision-Date: 2020-06-08 16:26-0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: pt_BR\n"
@@ -16,16 +16,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.3.1\n"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:7
 #: data/launcher.desktop.in:3 src/MainWindow.vala:28
 msgid "Palette"
-msgstr ""
+msgstr "Palette"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:8
 #: data/launcher.desktop.in:5
 msgid "View and copy colors from the elementary brand palette"
-msgstr ""
+msgstr "Visualize e copie as cores da paleta da marca elementary"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:10
 msgid ""
@@ -36,15 +37,15 @@ msgstr ""
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:11
 msgid "Handy features:"
-msgstr ""
+msgstr "Recursos úteis:"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:13
 msgid "Clean and straightforward design"
-msgstr ""
+msgstr "Design simples e direto"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:14
 msgid "Click to copy any color to your clipboard"
-msgstr ""
+msgstr "Clique para copiar qualquer cor para sua área de transferência"
 
 #: data/com.github.cassidyjames.palette.appdata.xml.in:15
 msgid "Supports both hex values and Gtk.CSS color constants"
@@ -58,120 +59,301 @@ msgid ""
 "a more streamlined workflow."
 msgstr ""
 
-#: data/com.github.cassidyjames.palette.appdata.xml.in:177
-msgid "Cassidy James Blaede"
+#: data/com.github.cassidyjames.palette.appdata.xml.in:27
+msgid "Fix Mint and Bubblegum text sometimes being unreadable"
 msgstr ""
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:32
+msgid "Minty Bubblegum?"
+msgstr ""
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:34
+msgid "New Mint palette color for vector path intersections"
+msgstr ""
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:35
+msgid "New Bubblegum palette color for erasers"
+msgstr ""
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:36
+msgid "Tweaked layout to better fit all the colors"
+msgstr ""
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:42
+msgid "Fix .desktop translation error"
+msgstr ""
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:47
+msgid "Translation updates"
+msgstr "Atualizações de tradução"
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:49
+msgid "Italian translations thanks to Mirko Brombin"
+msgstr "Tradução para o italiano graças a Mirko Brombin"
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:50
+msgid "Polish translations thanks to Michał Nowakowski"
+msgstr "Tradução para o polonês graças a Michał Nowakowski."
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:56
+msgid "Bonjour encore! Updated French translations thanks to @NathanBnm."
+msgstr ""
+"Bonjour encore! Atualização da tradução para o francês graças a @NathanBnm."
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:61
+msgid "Hallo! Dutch translations thanks to Heimen Stoffels."
+msgstr "Hallo! Tradução para o holandês graças a Heimen Stoffels."
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:66
+msgid ""
+"Happy new year! This release contains AppData fixes and updated Spanish "
+"translations."
+msgstr ""
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:71
+msgid "Under-the-hood and style tweaks"
+msgstr ""
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:76
+msgid "Brand New Mini Mode!"
+msgstr "Novo Modo Compacto!"
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:77
+msgid ""
+"Hit the new icon in the titlebar to collapse Palette down to a small docked "
+"always-on-top window, perfect for keeping it around as part of your "
+"workflow. All of the same functionality is available, just more out of the "
+"way."
+msgstr ""
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:78
+msgid ""
+"Palette remembers where the full-size and mini windows were last open, so "
+"drag the mini window to whichever side of the display works best for you."
+msgstr ""
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:83
+msgid "Developer Mode 👩‍💻"
+msgstr "Modo de Desenvolvedor 👩‍💻"
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:85
+msgid "Gtk.CSS color constants! Just flip the toggle."
+msgstr ""
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:86
+msgid "Window position is remembered"
+msgstr ""
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:87
+msgid "Refreshed design with less repetition and larger color names"
+msgstr ""
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:93
+msgid "Salam! Initial Azerbaijani translations thanks to manymous"
+msgstr "Salam! Tradução inicial para o azerbaijano graças a manymous"
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:98
+msgid "Updated translations and under-the-hood cleaning"
+msgstr ""
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:103
+msgid "Add examples of uses to the bottom of each color card"
+msgstr ""
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:108
+msgid "Refreshed icon designed by Sam Hewitt and Micah Ilbery"
+msgstr ""
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:113
+msgid "Hello, Juno!"
+msgstr "Olá, Juno!"
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:118
+msgid "All About That Grape"
+msgstr ""
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:120
+msgid "Updated Grape color to match official elementary palette"
+msgstr ""
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:121
+msgid "Updated icons to match new Grape color"
+msgstr ""
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:122
+msgid "Здравствуйте! Added Russian translations thanks to Camellan"
+msgstr "Здравствуйте! Tradução para o russo graças a Camellan."
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:123
+msgid "Add translation instructions and update translation link in app data"
+msgstr ""
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:129
+msgid "Hola! Added Catalan translations thanks to eudaldgr."
+msgstr "Hola! Tradução para o catalão graças a eudaldgr."
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:134
+msgid "¡Hola! Added Spanish translations thanks to Alain (alainm23)."
+msgstr "¡Hola! Tradução para o espanhol graças a Alain (alainm23)."
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:139
+msgid "Bună ziua! Added Romanian translations thanks to Plugaru Tudor."
+msgstr "Bună ziua! Tradução para o romeno graças a Plugaru Tudor."
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:144
+msgid "Bonjour! Added French translations thanks to ArthurS1."
+msgstr "Bonjour! Tradução para o francês graças a ArthurS1."
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:149
+msgid "Makeover"
+msgstr ""
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:151
+msgid "Sexy new icons from Micah Ilbery"
+msgstr ""
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:152
+msgid "Refined palette variant popover styles"
+msgstr ""
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:153
+msgid "Code cleanup, including translatability"
+msgstr ""
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:159
+msgid "Initial release"
+msgstr "Lançamento inicial"
+
+#: data/com.github.cassidyjames.palette.appdata.xml.in:209
+msgid "Cassidy James Blaede"
+msgstr "Cassidy James Blaede"
 
 #: data/launcher.desktop.in:4
 msgid "Color palette viewer"
-msgstr ""
+msgstr "Visualizador de paleta de cores"
 
 #: data/launcher.desktop.in:8
 msgid "com.github.cassidyjames.palette"
-msgstr ""
+msgstr "com.github.cassidyjames.palette"
 
 #: data/launcher.desktop.in:12
 msgid "color;palette;scheme;copy;paste;swatch;contrast;🎨;"
 msgstr ""
 
-#: src/Colors.vala:37
+#: src/Colors.vala:39
 msgid "Strawberry"
 msgstr ""
 
-#: src/Colors.vala:39
+#: src/Colors.vala:41
 msgid "Orange"
 msgstr ""
 
-#: src/Colors.vala:41
+#: src/Colors.vala:43
 msgid "Banana"
 msgstr ""
 
-#: src/Colors.vala:43
+#: src/Colors.vala:45
 msgid "Lime"
 msgstr ""
 
-#: src/Colors.vala:45
-msgid "Blueberry"
-msgstr ""
-
 #: src/Colors.vala:47
-msgid "Grape"
+msgid "Mint"
 msgstr ""
 
 #: src/Colors.vala:49
-msgid "Cocoa"
+msgid "Blueberry"
 msgstr ""
 
 #: src/Colors.vala:51
-msgid "Silver"
+msgid "Grape"
 msgstr ""
 
 #: src/Colors.vala:53
-msgid "Slate"
+msgid "Bubblegum"
 msgstr ""
 
 #: src/Colors.vala:55
+msgid "Cocoa"
+msgstr ""
+
+#: src/Colors.vala:57
+msgid "Silver"
+msgstr ""
+
+#: src/Colors.vala:59
+msgid "Slate"
+msgstr ""
+
+#: src/Colors.vala:61
 msgid "Black"
 msgstr ""
 
-#: src/Colors.vala:64
+#: src/Colors.vala:70
 msgid "alert, stop, delete, error, recording, video"
 msgstr ""
 
-#: src/Colors.vala:66
+#: src/Colors.vala:72
 msgid "music, news, update, presentation"
 msgstr ""
 
-#: src/Colors.vala:68
+#: src/Colors.vala:74
 msgid "caution, warning, mail, history, favorite"
 msgstr ""
 
-#: src/Colors.vala:70
+#: src/Colors.vala:76
 msgid "success, start, go, new, event, spreadsheet"
 msgstr ""
 
-#: src/Colors.vala:72
-msgid "elementary, default accent, question, help, downloads, document"
-msgstr ""
-
-#: src/Colors.vala:74
-msgid "network, sharing, developer, appcenter, beta, vala, programming"
-msgstr ""
-
-#: src/Colors.vala:76
-msgid "warm neutral, earth tone, brown"
-msgstr ""
-
 #: src/Colors.vala:78
-msgid "system, neutral light"
+msgid "vector path intersections, calming"
 msgstr ""
 
 #: src/Colors.vala:80
-msgid "cool neutral, default"
+msgid "elementary, default accent, question, help, downloads, document"
 msgstr ""
 
 #: src/Colors.vala:82
+msgid "network, sharing, developer, appcenter, beta, vala, programming"
+msgstr ""
+
+#: src/Colors.vala:84
+msgid "eraser, playful"
+msgstr ""
+
+#: src/Colors.vala:86
+msgid "warm neutral, earth tone, brown"
+msgstr ""
+
+#: src/Colors.vala:88
+msgid "system, neutral light"
+msgstr ""
+
+#: src/Colors.vala:90
+msgid "cool neutral, default"
+msgstr ""
+
+#: src/Colors.vala:92
 msgid "neutral dark"
 msgstr ""
 
 #: src/MainWindow.vala:34
 msgid "Mini mode"
-msgstr ""
+msgstr "Modo compacto"
 
-#: src/Widgets/ColorButton.vala:71
+#: src/Widgets/ColorButton.vala:74
 msgid "Hex value"
-msgstr ""
+msgstr "Valor hexadecimal"
 
-#: src/Widgets/ColorButton.vala:72
+#: src/Widgets/ColorButton.vala:75
 msgid "Gtk.CSS color constant"
-msgstr ""
+msgstr "Constante de cor Gtk.CSS"
 
-#: src/Widgets/ColorButton.vala:78
+#: src/Widgets/ColorButton.vala:81
 #, c-format
 msgid "<b>Uses:</b> %s"
-msgstr ""
+msgstr "<b>Usos:</b> %s"
 
 #: src/Widgets/ColorVariant.vala:53 src/Widgets/ColorVariant.vala:101
 #, c-format
 msgid "Copy %s to clipboard"
-msgstr ""
+msgstr "Copiar %s para a área de transferência"

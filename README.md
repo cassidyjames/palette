@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/cassidyjames/palette.svg?branch=master)](https://travis-ci.org/cassidyjames/palette)
-
 <p align="center">
   <img src="data/icons/128.svg" alt="Icon" />
 </p>

@@ -1,5 +1,5 @@
 /*
-* Copyright © 2018–2020 Cassidy James Blaede (https://cassidyjames.com)
+* Copyright © 2018–2021 Cassidy James Blaede (https://cassidyjames.com)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -68,6 +68,23 @@ public class Palette : Gtk.Application {
             if (mini_window != null) {
                 mini_window.destroy ();
             }
+        });
+
+        unowned var gtk_settings = Gtk.Settings.get_default ();
+        unowned var granite_settings = Granite.Settings.get_default ();
+
+        gtk_settings.gtk_cursor_theme_name = "elementary";
+        gtk_settings.gtk_icon_theme_name = "elementary";
+        gtk_settings.gtk_theme_name = "io.elementary.stylesheet.slate";
+
+        gtk_settings.gtk_application_prefer_dark_theme = (
+            granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK
+        );
+
+        granite_settings.notify["prefers-color-scheme"].connect (() => {
+            gtk_settings.gtk_application_prefer_dark_theme = (
+                granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK
+            );
         });
 
         // Set up main window

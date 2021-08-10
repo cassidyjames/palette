@@ -22,6 +22,16 @@
     <binary>com.github.cassidyjames.palette</binary>
   </provides>
   <releases>
+    <release version="4.0.0" date="2021-08-09">
+      <description>
+        <p>Hello, Odin</p>
+        <ul>
+          <li>Update for OS 6 and Flatpak</li>
+          <li>Turkish translations thanks to Safak GENISOL</li>
+          <li>Brazilian Portuguese translations thanks to Henrique Andrade</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.2.1" date="2020-05-16">
       <description>
         <p>Fix Mint and Bubblegum text sometimes being unreadable</p>
@@ -162,19 +172,16 @@
   </releases>
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/cassidyjames/palette/master/data/screenshots/default@2x.png</image>
+      <image>https://raw.githubusercontent.com/cassidyjames/palette/master/data/screenshots/screenshot.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/cassidyjames/palette/master/data/screenshots/strawberry-hex@2x.png</image>
+      <image>https://raw.githubusercontent.com/cassidyjames/palette/master/data/screenshots/screenshot-open.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/cassidyjames/palette/master/data/screenshots/grape-const@2x.png</image>
+      <image>https://raw.githubusercontent.com/cassidyjames/palette/master/data/screenshots/screenshot-mini.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/cassidyjames/palette/master/data/screenshots/mini@2x.png</image>
-    </screenshot>
-    <screenshot>
-      <image>https://raw.githubusercontent.com/cassidyjames/palette/master/data/screenshots/mini-desktop@2x.png</image>
+      <image>https://raw.githubusercontent.com/cassidyjames/palette/master/data/screenshots/screenshot-mini-open.png</image>
     </screenshot>
   </screenshots>
   <content_rating type="oars-1.1">
@@ -217,5 +224,6 @@
     <value key="x-appcenter-color-primary">#ffe16b</value>
     <value key="x-appcenter-color-primary-text">#333333</value>
     <value key="x-appcenter-suggested-price">6</value>
+    <value key="x-appcenter-stripe">pk_live_Y2Xdk6qMEs9mjCwiiSPJ4Nex00NziS13ZG</value>
   </custom>
 </component>

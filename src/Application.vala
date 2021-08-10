@@ -70,6 +70,23 @@ public class Palette : Gtk.Application {
             }
         });
 
+        unowned var gtk_settings = Gtk.Settings.get_default ();
+        unowned var granite_settings = Granite.Settings.get_default ();
+
+        gtk_settings.gtk_cursor_theme_name = "elementary";
+        gtk_settings.gtk_icon_theme_name = "elementary";
+        gtk_settings.gtk_theme_name = "io.elementary.stylesheet.slate";
+
+        gtk_settings.gtk_application_prefer_dark_theme = (
+            granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK
+        );
+
+        granite_settings.notify["prefers-color-scheme"].connect (() => {
+            gtk_settings.gtk_application_prefer_dark_theme = (
+                granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK
+            );
+        });
+
         // Set up main window
         main_window = new MainWindow (this);
         main_window.configure_event.connect (() => {
